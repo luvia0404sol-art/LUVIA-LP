@@ -21,6 +21,7 @@
           },
           animation: {
             'glow': 'glow 2s ease-in-out infinite alternate',
+            'border-shine': 'border-shine 3s linear infinite'
           },
           keyframes: {
             glow: {
@@ -112,6 +113,35 @@
         <p class="text-center text-sm text-stone-300 mt-2">すべて税込・安心の都度払い価格</p>
       </div>
       
+      <!-- ★NEW: PREMIUM PLAN (特別枠) -->
+      <div class="relative bg-gradient-to-br from-zinc-800 to-black p-1 rounded-2xl shadow-[0_0_25px_rgba(212,175,55,0.3)] mb-10 overflow-hidden" data-aos="zoom-in-up" data-aos-delay="100">
+        <!-- 枠線の光る演出 -->
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-gold to-transparent opacity-30"></div>
+        
+        <div class="bg-black/95 p-6 sm:p-8 rounded-xl relative z-10 border border-gold/40">
+          <div class="text-center mb-5">
+            <span class="inline-block text-[10px] sm:text-xs font-black text-black bg-gradient-to-r from-gold to-goldDark px-4 py-1.5 rounded-full mb-3 tracking-widest shadow-md">PREMIUM PLAN</span>
+            <h4 class="font-bold text-white text-xl sm:text-2xl leading-snug">
+              CLEAR/SP 光フェイシャル<br>
+              <span class="text-gold text-lg">×</span><br>
+              セルキュア4T++<br>
+              <span class="block text-gold tracking-widest mt-2">極上リフト＆美肌コース</span>
+            </h4>
+          </div>
+          
+          <p class="text-sm text-stone-300 leading-relaxed text-justify mb-6">
+            LUVIAが誇る最高峰のフェイシャルトリートメント。特殊な光照射で肌の奥からコラーゲン生成を促し、特許取得のI.W波EMS「セルキュア4T++」で深層の表情筋をダイレクトに引き締めます。<br><br>
+            さらにエレクトロポレーションによる美容成分の深部導入を掛け合わせることで、たるみ・むくみを劇的にケア。キュッと引き締まった理想のフェイスラインと、内側から発光するような透明感あふれる素肌へ導きます。
+          </p>
+          
+          <div class="text-right border-t border-gold/30 pt-4">
+            <span class="text-sm text-stone-400 mr-3">特別コース</span>
+            <span class="text-xl font-extrabold text-gold drop-shadow-md">都度払い</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 通常メニュー4種 -->
       <div class="space-y-4">
         <!-- Menu 1 -->
         <div class="bg-black p-5 rounded-xl border border-gold/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 shadow-md hover:border-gold transition-colors duration-300" data-aos="fade-right" data-aos-delay="100">
@@ -217,8 +247,8 @@
   <script>
     AOS.init({
       duration: 800,
-      once: true, // スクロールして戻った時に何度もアニメーションしないようにする
-      offset: 50, // 要素が50px画面に入ったら開始
+      once: true,
+      offset: 50,
     });
   </script>
 </body>
