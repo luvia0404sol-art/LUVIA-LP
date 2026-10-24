@@ -29,12 +29,16 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-stone-900 text-white py-16 px-4 text-center">
-    <div class="max-w-2xl mx-auto space-y-4">
-      <span class="inline-block text-xs uppercase tracking-widest text-brand font-semibold border border-brand/40 px-3 py-1 rounded-full">愛知県稲沢市｜完全予約制</span>
-      <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight">高額コース契約・ローン一切なし。<br><span class="text-brand">「完全都度払い」</span>の安心サロン</h2>
-      <p class="text-stone-300 text-sm leading-relaxed">カーテン仕切りの落ち着いたプライベート空間で、<br>プロ専任施術の光脱毛・本格美顔・ホワイトニングを提供します。</p>
+  <!-- Hero Section (看板写真) -->
+  <section class="relative w-full h-[60vh] min-h-[400px] bg-stone-900 flex items-center justify-center">
+    <!-- 背景画像 (アップロードした看板画像を読み込む) -->
+    <div class="absolute inset-0 w-full h-full overflow-hidden">
+      <img src="1792408170964.jpg" alt="LUVIA サロン外観" class="w-full h-full object-cover opacity-60">
+    </div>
+    <!-- テキスト -->
+    <div class="relative z-10 max-w-2xl mx-auto px-4 text-center space-y-4">
+      <span class="inline-block text-xs uppercase tracking-widest text-brand font-semibold border border-brand/40 px-3 py-1 rounded-full bg-black/50">愛知県稲沢市｜完全予約制</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight text-white drop-shadow-md">高額コース契約・ローン一切なし。<br><span class="text-brand">「完全都度払い」</span>の安心サロン</h2>
       <div class="pt-4">
         <a href="https://lin.ee/qETVxVr" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-brand text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-brandDark transition">公式LINEで空き状況・予約を確認</a>
       </div>
@@ -114,12 +118,13 @@
     </div>
   </section>
 
-  <!-- STAFF Section (NATSUMI / YUME) -->
+  <!-- STAFF Section (NATSUMI / YUME) + アップロードした写真 -->
   <section class="max-w-3xl mx-auto px-4 py-8 border-t border-stone-200">
     <h3 class="text-center text-lg font-bold text-stone-900 mb-6 tracking-wider">STAFF</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
       <!-- NATSUMI -->
       <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm">
+        <img src="1791266765267.jpg" alt="NATSUMI" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-stone-100">
         <h4 class="font-bold text-stone-900 text-lg mb-1">NATSUMI</h4>
         <p class="text-xs text-stone-500 mb-4">専用ページ・ご予約はこちら</p>
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lit.link/_naaa&color=000000&bgcolor=ffffff" alt="NATSUMI QRコード" class="mx-auto border border-stone-200 p-2 rounded-xl bg-white shadow-sm w-32 h-32 mb-4">
@@ -128,6 +133,7 @@
       
       <!-- YUME -->
       <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm">
+        <img src="1791266765312.jpg" alt="YUME" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-stone-100">
         <h4 class="font-bold text-stone-900 text-lg mb-1">YUME</h4>
         <p class="text-xs text-stone-500 mb-4">専用ページ・ご予約はこちら</p>
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lit.link/7ebe1cf1-00a7-47bb-8fb1-c6ad041c2535&color=000000&bgcolor=ffffff" alt="YUME QRコード" class="mx-auto border border-stone-200 p-2 rounded-xl bg-white shadow-sm w-32 h-32 mb-4">
