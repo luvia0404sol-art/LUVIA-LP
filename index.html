@@ -33,6 +33,9 @@
     </script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         .gold-gradient-text {
             background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa7c11 100%);
@@ -71,13 +74,12 @@
 
     <!-- ファーストビュー（FV）：外観写真を全面背景に配置 -->
     <section class="relative min-h-[90vh] flex items-center justify-center pt-20 pb-16 overflow-hidden">
-        <!-- 背景外観写真 + ダークオーバーレイグラデーション -->
         <div class="absolute inset-0 z-0">
             <img src="./1791266765267.jpg" alt="LUVIA サロン外観" class="w-full h-full object-cover object-center filter brightness-[0.35] scale-105">
             <div class="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/60 to-dark-900"></div>
         </div>
 
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center" data-aos="fade-up" data-aos-duration="1000">
             <span class="inline-block py-1 px-4 mb-4 rounded-full border border-gold/50 text-gold-light text-xs md:text-sm tracking-widest uppercase bg-black/60 backdrop-blur-sm">
                 愛知県稲沢市｜完全予約制プライベートサロン
             </span>
@@ -91,7 +93,7 @@
             </p>
 
             <!-- 初回限定オファーバナー -->
-            <div class="bg-dark-900/90 border border-gold/70 rounded-2xl p-6 mb-8 max-w-xl mx-auto shadow-2xl relative backdrop-blur-md gold-glow">
+            <div class="bg-dark-900/90 border border-gold/70 rounded-2xl p-6 mb-8 max-w-xl mx-auto shadow-2xl relative backdrop-blur-md gold-glow" data-aos="zoom-in" data-aos-delay="200">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-black text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
                     First Visit Offer
                 </div>
@@ -105,7 +107,7 @@
             </div>
 
             <!-- CTAボタン -->
-            <div class="flex justify-center">
+            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="400">
                 <a href="https://lin.ee/placeholder" target="_blank" class="w-full sm:w-auto btn-gold text-black font-extrabold text-base py-4 px-8 rounded-full shadow-2xl flex items-center justify-center gap-2">
                     <i class="fa-brands fa-line text-2xl"></i>
                     公式LINEで空き状況を確認（24時間受付）
@@ -116,7 +118,7 @@
 
     <!-- 特大ハイライト：公式WEBチラシ・メニュー一覧 -->
     <section id="flyer" class="py-16 bg-dark-800 border-y border-gray-800 relative">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-8">
                 <span class="bg-gold/20 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/40 uppercase tracking-widest">
                     Official Flyer & Menu
@@ -125,7 +127,6 @@
                 <p class="text-xs md:text-sm text-gray-400 mt-2">店頭配布中の公式チラシです。施術内容・部位別料金をすべて一覧でご確認いただけます。</p>
             </div>
 
-            <!-- チラシ掲載フレーム（金枠・シャドウ） -->
             <div class="relative rounded-2xl overflow-hidden border-2 border-gold/60 gold-glow bg-dark-900 group">
                 <img src="./1792408170964.jpg" alt="LUVIA 公式チラシ・メニュー表" class="w-full h-auto object-contain mx-auto transition duration-300 group-hover:scale-[1.01]">
                 <div class="p-4 bg-dark-900/95 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
@@ -140,14 +141,13 @@
 
     <!-- YouTube サロン＆施術紹介動画 -->
     <section class="py-16 bg-dark-900">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-10">
                 <h2 class="text-xs uppercase tracking-widest text-gold mb-2">Movie</h2>
                 <p class="text-2xl md:text-3xl font-bold text-white">サロン紹介・施術ムービー</p>
                 <p class="text-xs md:text-sm text-gray-400 mt-2">実際の施術の様子やプライベート空間の雰囲気を動画でご覧いただけます。</p>
             </div>
 
-            <!-- YouTube レスポンシブコンテナ（アスペクト比 16:9） -->
             <div class="relative w-full rounded-2xl overflow-hidden border border-gold/40 shadow-2xl bg-black" style="padding-top: 56.25%;">
                 <iframe class="absolute top-0 left-0 w-full h-full" 
                         src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
@@ -164,7 +164,7 @@
     <!-- スタッフ紹介セクション（𝑵𝒂𝒕𝒔𝒖𝒎𝒊 / yume） -->
     <section id="staff" class="py-16 bg-dark-800 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-xs uppercase tracking-widest text-gold mb-2">Staff Members</h2>
                 <p class="text-2xl md:text-3xl font-bold text-white">専任プロスタッフ</p>
                 <p class="text-xs md:text-sm text-gray-400 mt-2">お客様お一人おひとりに寄り添い、丁寧なカウンセリングと確かな技術をお届けします。</p>
@@ -172,9 +172,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- 1. 𝑵𝒂𝒕𝒔𝒖𝒎𝒊 -->
-                <div class="bg-dark-900 border border-gold/30 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between">
+                <div class="bg-dark-900 border border-gold/30 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between" data-aos="fade-right">
                     <div>
-                        <!-- スタッフ写真（圧縮写真枠） -->
                         <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-gold mb-4 bg-dark-700">
                             <img src="./1791266765312.jpg" alt="𝑵𝒂𝒕𝒔𝒖𝒎𝒊" class="w-full h-full object-cover">
                         </div>
@@ -187,7 +186,6 @@
 
                     <div class="mt-6 pt-4 border-t border-gray-800 flex flex-col items-center">
                         <span class="text-xs text-gray-400 mb-2 font-bold"><i class="fa-solid fa-qrcode text-gold mr-1"></i> 公式SNS・配信QRコード</span>
-                        <!-- QRコード枠（API自動生成：URL変更可能） -->
                         <div class="p-2 bg-white rounded-lg shadow-md inline-block">
                             <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://17.live/" alt="𝑵𝒂𝒕𝒔𝒖𝒎𝒊 QRコード" class="w-24 h-24">
                         </div>
@@ -196,9 +194,8 @@
                 </div>
 
                 <!-- 2. yume -->
-                <div class="bg-dark-900 border border-gold/30 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between">
+                <div class="bg-dark-900 border border-gold/30 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between" data-aos="fade-left">
                     <div>
-                        <!-- スタッフ写真（圧縮写真枠） -->
                         <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-gold mb-4 bg-dark-700">
                             <img src="./1792409007040.jpg" alt="yume" class="w-full h-full object-cover">
                         </div>
@@ -211,7 +208,6 @@
 
                     <div class="mt-6 pt-4 border-t border-gray-800 flex flex-col items-center">
                         <span class="text-xs text-gray-400 mb-2 font-bold"><i class="fa-solid fa-qrcode text-gold mr-1"></i> 公式SNS・予約QRコード</span>
-                        <!-- QRコード枠（API自動生成：URL変更可能） -->
                         <div class="p-2 bg-white rounded-lg shadow-md inline-block">
                             <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://lin.ee/placeholder" alt="yume QRコード" class="w-24 h-24">
                         </div>
@@ -224,7 +220,7 @@
 
     <!-- サービスメニュー（完全都度払い） -->
     <section id="menu" class="py-16 bg-dark-900 border-t border-gray-800">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-xs uppercase tracking-widest text-gold mb-2">Service Menu</h2>
                 <p class="text-2xl md:text-3xl font-bold text-white">4つのプロフェッショナルメニュー</p>
@@ -233,7 +229,7 @@
 
             <div class="space-y-6">
                 <!-- 1. CLEAR/SP 脱毛 -->
-                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition">
+                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div>
                             <span class="bg-gold/10 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/30">脱毛・プロ専任施術</span>
@@ -247,12 +243,12 @@
                     </div>
                     <ul class="text-xs text-gray-400 space-y-1 border-t border-gray-800 pt-3">
                         <li><i class="fa-solid fa-check text-gold mr-1"></i> ヒゲ脱毛、VIO、腕・脚、全身まで各部位都度払い対応</li>
-                        <li><i class="fa-solid fa-check text-gold mr-1"></i> 資格保有プロスタッフが肌状態に合わせて照射レベルを最適化</li>
+                        <li><i class="fa-solid fa-check text-gold mr-1"></i> 専任スタッフが肌状態に合わせて照射レベルを最適化</li>
                     </ul>
                 </div>
 
                 <!-- 2. セルキュア4T++ -->
-                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition">
+                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div>
                             <span class="bg-gold/10 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/30">お顔集中特化</span>
@@ -271,7 +267,7 @@
                 </div>
 
                 <!-- 3. セルフホワイトニング -->
-                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition">
+                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div>
                             <span class="bg-gold/10 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/30">歯のホワイトニング</span>
@@ -290,7 +286,7 @@
                 </div>
 
                 <!-- 4. INFINITY CHAIN -->
-                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition">
+                <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div>
                             <span class="bg-gold/10 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/30">ジュエリー</span>
@@ -313,7 +309,7 @@
 
     <!-- サロン概要・店舗情報 -->
     <section class="py-16 bg-dark-800 border-t border-gray-800">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-10">
                 <h2 class="text-xs uppercase tracking-widest text-gold mb-2">Access & Info</h2>
                 <p class="text-2xl font-bold text-white">サロン概要・店舗情報</p>
@@ -340,7 +336,7 @@
         </div>
     </section>
 
-    <!-- フッター（soleil株式会社は完全削除、LUVIA単体表記） -->
+    <!-- フッター（法人名完全削除・LUVIAブランド単独表記） -->
     <footer class="pt-8 pb-28 bg-dark-900 border-t border-gray-800 text-center text-xs text-gray-500">
         <p class="mb-2 font-serif tracking-widest text-gold-light font-bold text-sm">TOTAL BEAUTY SALON LUVIA</p>
         <p>&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
@@ -356,5 +352,14 @@
         </div>
     </div>
 
+    <!-- AOS Animation初期化 -->
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
 </body>
 </html>
