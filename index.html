@@ -74,56 +74,110 @@
                 <a href="#menu" class="text-gray-300 hover:text-gold transition">メニュー</a>
                 <a href="#movie" class="text-gray-300 hover:text-gold transition">動画</a>
                 <a href="#staff" class="text-gray-300 hover:text-gold transition">スタッフ</a>
-                <a href="#access" class="text-gray-300 hover:text-gold transition">店舗情報</a>
             </div>
         </div>
     </header>
 
-    <!-- ファーストビュー（FV） -->
-    <section class="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <!-- ファーストビュー（FV）LINE誘導特化型 -->
+    <section class="relative min-h-[95vh] flex items-center justify-center pt-24 pb-12 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="./1792408170964.jpg?v=final" alt="LUVIA サロン外観" class="w-full h-full object-cover object-center filter brightness-[0.3] scale-105">
             <div class="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/60 to-dark-900"></div>
         </div>
 
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center mt-4" data-aos="fade-up" data-aos-duration="1000">
             <span class="inline-block py-1 px-4 mb-4 rounded-full border border-gold/50 text-gold-light text-xs md:text-sm tracking-widest uppercase bg-black/60 backdrop-blur-sm">
                 愛知県稲沢市｜完全予約制プライベートサロン
             </span>
-            <p class="font-serif text-lg md:text-2xl tracking-widest gold-gradient-text mb-3">自分を、もっと好きになれる場所。</p>
-            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-wide text-white mb-6 drop-shadow-lg">
+            <p class="font-serif text-lg md:text-2xl tracking-widest gold-gradient-text mb-2">自分を、もっと好きになれる場所。</p>
+            <h1 class="text-2xl md:text-4xl font-extrabold leading-tight tracking-wide text-white mb-6 drop-shadow-lg">
                 高額ローン・回数券勧誘は<br class="md:hidden"><span class="gold-gradient-text">一切なし。</span><br>
-                プロ専任施術の<span class="underline decoration-gold underline-offset-8">完全都度払い</span>サロン
+                安心の<span class="underline decoration-gold underline-offset-8">完全都度払い</span>サロン
             </h1>
-            <p class="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow">
-                カーテン仕切りの上質なプライベート空間で、妥協のない本格美容体験を提供。<br class="hidden md:inline">
-                「通いたい時に、受けた分だけ支払う」安心の明朗会計をお約束します。
-            </p>
 
-            <!-- 初回限定オファーバナー -->
-            <div class="bg-dark-900/90 border border-gold/70 rounded-2xl p-6 mb-8 max-w-xl mx-auto shadow-2xl relative backdrop-blur-md gold-glow" data-aos="zoom-in" data-aos-delay="200">
-                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-black text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
-                    First Visit Offer
+            <!-- 最強のLINE誘導フック（他社批判を排除しメリットに特化） -->
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-amber-500/40 shadow-[0_0_30px_rgba(245,158,11,0.2)] mb-8 max-w-lg mx-auto relative backdrop-blur-md" data-aos="zoom-in" data-aos-delay="200">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[11px] font-bold px-4 py-1.5 rounded-full animate-pulse shadow-lg shadow-red-500/30 whitespace-nowrap">
+                    ＼ ご予約は公式LINEが一番お得！ ／
                 </div>
-                <p class="text-gold text-sm font-bold mb-1">【初回限定トライアル】</p>
-                <h3 class="text-xl md:text-2xl font-bold text-white mb-2">セルフホワイトニング照射</h3>
-                <div class="flex items-center justify-center gap-3">
-                    <span class="text-gray-400 line-through text-sm">通常 4,000円</span>
-                    <span class="text-3xl md:text-4xl font-extrabold text-gold-light">980<span class="text-sm font-normal text-white">円 (税込)</span></span>
+                <h2 class="text-xl font-bold mb-2 text-white mt-2">公式LINEからのご予約で<br><span class="text-amber-500 text-2xl">【いつでも最安値】</span>で通える！</h2>
+                <p class="text-xs text-gray-300 mb-5 leading-relaxed">
+                    外部予約サイトを経由せず、<br>
+                    公式LINEから直接ご予約いただいた方限定で<br>
+                    <span class="text-yellow-400 font-bold text-sm">2回目以降もずっと特別価格（全員価格）！</span>
+                </p>
+                
+                <!-- LINE登録ボタン -->
+                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="block w-full bg-[#06C755] hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-[0_8px_20px_rgba(6,199,85,0.4)] transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-lg relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
+                    <i class="fa-brands fa-line text-2xl"></i>
+                    今すぐLINEを追加する
+                </a>
+                
+                <div class="mt-5 pt-4 border-t border-gray-700">
+                    <p class="text-xs text-amber-500 font-bold mb-1">LINEお友達追加でさらにお得！</p>
+                    <p class="text-sm font-bold text-white">セルフホワイトニング <span class="text-yellow-400 text-xl">初回980円</span></p>
                 </div>
-                <p class="text-xs text-gray-400 mt-2">※完全予約制 / 清潔感のある明るい笑顔に</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE予約限定 特別プライスリスト -->
+    <section class="bg-gray-950 text-white py-12 px-4 border-t border-gray-800" data-aos="fade-up">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-8">
+                <span class="bg-gold/20 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/40 uppercase tracking-widest">
+                    LINE Members Only
+                </span>
+                <h2 class="text-2xl font-bold text-gold-light mt-3 mb-2 font-serif">LINE予約限定<br>特別プライスリスト</h2>
+                <p class="text-xs text-gray-400">公式LINEから直接ご予約いただいた方限定の価格です。</p>
+            </div>
+            
+            <!-- 脱毛メニュー -->
+            <div class="mb-6 border border-gray-800 rounded-xl p-5 bg-dark-900 shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gold"></div>
+                <h3 class="text-lg font-bold border-b border-gray-700 pb-2 mb-4 text-gold-light flex justify-between items-end">
+                    光脱毛 (CLEAR/SP) <span class="text-[10px] text-gray-400 font-normal">※都度払い</span>
+                </h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between items-end border-b border-gray-800 pb-1">
+                        <span>レディース全身<span class="text-[10px] text-gray-400 ml-1">(顔・VIO込)</span></span>
+                        <span class="font-bold text-yellow-500 text-base">¥11,000</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-800 pb-1">
+                        <span>メンズ全身<span class="text-[10px] text-gray-400 ml-1">(顔・VIO込)</span></span>
+                        <span class="font-bold text-yellow-500 text-base">¥19,800</span>
+                    </div>
+                    <div class="flex justify-between items-end pb-1">
+                        <span>キッズ全身<span class="text-[10px] text-gray-400 ml-1">(顔・VIOなし)</span></span>
+                        <span class="font-bold text-yellow-500 text-base">¥6,980</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- CTAボタン -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="btn-line text-white font-extrabold text-base py-4 px-8 rounded-full shadow-2xl flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-line text-2xl"></i>
-                    公式LINEで空き状況確認・予約
-                </a>
-                <a href="#flyer" class="btn-gold text-black font-extrabold text-base py-4 px-8 rounded-full shadow-2xl flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-file-invoice text-xl"></i>
-                    公式チラシ・メニュー一覧
-                </a>
+            <!-- セルキュアメニュー -->
+            <div class="mb-6 border border-gray-800 rounded-xl p-5 bg-dark-900 shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gold"></div>
+                <h3 class="text-lg font-bold border-b border-gray-700 pb-2 mb-4 text-gold-light flex justify-between items-end">
+                    フェイシャル (セルキュア4T++)
+                </h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between items-end border-b border-gray-800 pb-1">
+                        <span>フェイシャル・ヘッドのみ</span>
+                        <span class="font-bold text-yellow-500 text-base">¥8,980</span>
+                    </div>
+                    <div class="bg-amber-900/20 p-3 rounded-lg mt-3 border border-amber-500/30">
+                        <p class="text-xs text-amber-400 font-bold mb-1">★究極の時短＆小顔セット★</p>
+                        <div class="flex justify-between items-end">
+                            <span class="text-sm">光脱毛とセットならずっと</span>
+                            <span class="font-bold text-yellow-400 text-base">¥6,980！</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-6">
+                <a href="#flyer" class="text-gold-light hover:underline text-xs"><i class="fa-solid fa-chevron-down"></i> さらに詳しいメニュー・チラシを見る</a>
             </div>
         </div>
     </section>
@@ -151,7 +205,7 @@
         </div>
     </section>
 
-    <!-- サービスメニュー詳細（CLEAR/SP画像・改定価格反映） -->
+    <!-- サービスメニュー詳細 -->
     <section id="menu" class="py-16 bg-dark-900 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-12">
@@ -180,7 +234,7 @@
                         </div>
                     </div>
 
-                    <!-- 脱毛ガイド1：光脱毛の仕組み＆お客様の声 -->
+                    <!-- 脱毛ガイド1 -->
                     <div class="mt-6 pt-6 border-t border-gray-700">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="w-2 h-2 rounded-full bg-gold"></span>
@@ -199,7 +253,7 @@
                         </div>
                     </div>
 
-                    <!-- 脱毛ガイド2：正しい自己処理のポイント解説 -->
+                    <!-- 脱毛ガイド2 -->
                     <div class="mt-6 pt-6 border-t border-gray-700">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="w-2 h-2 rounded-full bg-gold"></span>
@@ -229,12 +283,12 @@
                         </div>
                         <div class="text-left md:text-right">
                             <span class="text-xs text-gray-400 block">初回限定トライアル</span>
-                            <span class="text-2xl font-bold text-gold">¥980<span class="text-sm font-normal text-white">（通常 1回 ¥4,000）</span></span>
+                            <span class="text-2xl font-bold text-gold">¥980<span class="text-sm font-normal text-white">（LINE会員 ¥3,980）</span></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. セルキュア4T++（改定：6,000円〜） -->
+                <!-- 3. セルキュア4T++ -->
                 <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-3">
                         <div>
@@ -244,7 +298,7 @@
                         </div>
                         <div class="text-left md:text-right">
                             <span class="text-xs text-gray-400 block">都度払い集中ケア</span>
-                            <span class="text-2xl font-bold text-gold">¥6,000<span class="text-sm font-normal text-white">〜 / 回</span></span>
+                            <span class="text-2xl font-bold text-gold">¥8,980<span class="text-sm font-normal text-white">〜 / 回</span></span>
                         </div>
                     </div>
                     <ul class="text-xs text-gray-400 grid grid-cols-2 gap-2 border-t border-gray-700 pt-3">
@@ -255,7 +309,7 @@
                     </ul>
                 </div>
 
-                <!-- 4. INFINITY CHAIN（改定：7,000円〜） -->
+                <!-- 4. INFINITY CHAIN -->
                 <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-3">
                         <div>
@@ -265,7 +319,7 @@
                         </div>
                         <div class="text-left md:text-right">
                             <span class="text-xs text-gray-400 block">特別な想いを、ずっと身につけて</span>
-                            <span class="text-2xl font-bold text-gold">¥7,000<span class="text-sm font-normal text-white">〜</span></span>
+                            <span class="text-2xl font-bold text-gold">¥4,000<span class="text-sm font-normal text-white">〜</span></span>
                         </div>
                     </div>
                 </div>
@@ -273,7 +327,7 @@
         </div>
     </section>
 
-    <!-- ★YouTube サロン動画セクション（Shorts対応縦型コンテナ）★ -->
+    <!-- ★YouTube サロン動画セクション -->
     <section id="movie" class="py-16 bg-dark-800 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-8">
@@ -302,7 +356,7 @@
         </div>
     </section>
 
-    <!-- スタッフ紹介セクション（指名文言全廃・個別リットリンク直通） -->
+    <!-- スタッフ紹介セクション -->
     <section id="staff" class="py-16 bg-dark-900 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12" data-aos="fade-up">
@@ -359,7 +413,7 @@
         </div>
     </section>
 
-    <!-- 店舗情報（チラシの記載を100%完全反映） -->
+    <!-- 店舗情報 -->
     <section id="access" class="py-16 bg-dark-800 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-10">
@@ -396,13 +450,13 @@
         </div>
     </section>
 
-    <!-- フッター（法人名完全排除・LUVIA単独表記） -->
+    <!-- フッター -->
     <footer class="pt-8 pb-28 bg-dark-900 border-t border-gray-800 text-center text-xs text-gray-500">
         <p class="mb-2 font-serif tracking-widest text-gold-light font-bold text-sm">TOTAL BEAUTY SALON LUVIA</p>
         <p>&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
     </footer>
 
-    <!-- ★スマホ追従型 予約バー（指名文言完全抹殺・公式LINE直通グリーンボタン）★ -->
+    <!-- ★スマホ追従型 予約バー（公式LINE直通）★ -->
     <div class="fixed bottom-0 left-0 w-full p-3 bg-dark-900/95 backdrop-blur-md border-t border-gold/30 z-50">
         <div class="max-w-md mx-auto">
             <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="w-full btn-line text-white font-extrabold text-sm md:text-base py-3.5 px-6 rounded-full shadow-2xl flex items-center justify-center gap-2">
