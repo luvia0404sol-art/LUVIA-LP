@@ -95,7 +95,7 @@
                 安心の<span class="underline decoration-gold underline-offset-8">完全都度払い</span>サロン
             </h1>
 
-            <!-- 新：LINE予約誘導ブロック（統合・赤点滅追加版） -->
+            <!-- LINE予約誘導ブロック -->
             <div class="relative w-full max-w-lg mx-auto mb-8 px-2" data-aos="zoom-in" data-aos-delay="200">
               <!-- 上部フキダシバッジ（赤の点滅） -->
               <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10 whitespace-nowrap animate-pulse">
@@ -106,26 +106,20 @@
 
               <!-- メインカード -->
               <div class="bg-slate-900/95 border border-amber-500/50 rounded-2xl p-6 pt-8 shadow-[0_0_30px_rgba(245,158,11,0.2)] backdrop-blur-md text-center">
-                
-                <!-- 見出し1 -->
                 <h3 class="text-white text-base sm:text-lg font-bold tracking-tight mb-2">
                   【公式LINE限定】シークレット特別ご案内
                 </h3>
-                
-                <!-- テキスト1 -->
                 <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
                   完全予約制プライベート空間のため、ご案内できる枠に限りがございます。<br>
                   初回特典および特別枠の確保は、下記の公式LINEからのみ受付中。
                 </p>
 
-                <!-- 見出し2（帯ハイライト） -->
                 <div class="bg-gradient-to-r from-transparent via-amber-900/40 to-transparent py-2 mb-2">
                   <p class="text-amber-400 text-sm sm:text-base font-extrabold tracking-wide">
                     【LINE予約限定】初回・リピート特別優待
                   </p>
                 </div>
 
-                <!-- テキスト2 -->
                 <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
                   プライベート施術枠をリアルタイムで最優先確保。<br>
                   2回目以降もずっと通いやすい「特別枠」でお迎えします。
@@ -148,7 +142,6 @@
                     セルフホワイトニング <span class="text-rose-400 text-lg">初回 980円</span> クーポン進呈中
                   </p>
                 </div>
-
               </div>
             </div>
 
@@ -166,7 +159,6 @@
                 <p class="text-xs text-gray-400">公式LINEから直接ご予約いただいた方限定の価格です。</p>
             </div>
             
-            <!-- 脱毛メニュー -->
             <div class="mb-6 border border-gray-800 rounded-xl p-5 bg-dark-900 shadow-lg relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-gold"></div>
                 <h3 class="text-lg font-bold border-b border-gray-700 pb-2 mb-4 text-gold-light flex justify-between items-end">
@@ -188,7 +180,6 @@
                 </div>
             </div>
 
-            <!-- セルキュアメニュー -->
             <div class="mb-6 border border-gray-800 rounded-xl p-5 bg-dark-900 shadow-lg relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-gold"></div>
                 <h3 class="text-lg font-bold border-b border-gray-700 pb-2 mb-4 text-gold-light flex justify-between items-end">
@@ -215,7 +206,7 @@
         </div>
     </section>
 
-    <!-- 特大ハイライト：公式WEBチラシ・メニュー一覧 -->
+    <!-- 特大ハイライト：公式WEBチラシ -->
     <section id="flyer" class="py-16 bg-dark-800 border-y border-gray-800 relative">
         <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-8">
@@ -248,7 +239,7 @@
             </div>
 
             <div class="space-y-8">
-                <!-- 1. CLEAR/SP 光脱毛（プロ専任施術） -->
+                <!-- 1. CLEAR/SP 光脱毛 -->
                 <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 items-center">
                         <div class="w-full md:w-1/3 bg-dark-900 rounded-xl p-3 border border-gold/30 flex items-center justify-center overflow-hidden">
@@ -258,13 +249,23 @@
                             <span class="bg-gold/10 text-gold-light text-xs font-bold px-3 py-1 rounded-full border border-gold/30">脱毛・プロ専任施術</span>
                             <h3 class="text-xl font-bold text-white mt-2">CLEAR/SP 光脱毛（都度払い）</h3>
                             <p class="text-xs text-gray-300 mt-2 leading-relaxed">
-                                大人からお子様まで通える安心の脱毛サロン。デリケートなお肌にも対応できるやさしい脱毛で、ご家族みんなでキレイな肌へ。キッズ脱毛も対応可能です。
+                                大人からお子様まで通える安心の脱毛サロン。デリケートなお肌にも対応できるやさしい脱毛で、ご家族みんなでキレイな肌へ。
                             </p>
                             
-                            <!-- 新規追加：施術風景画像 -->
-                            <div class="grid grid-cols-2 gap-3 mt-4">
-                                <img src="./10741.jpg" alt="腕の脱毛施術" class="w-full h-24 sm:h-32 object-cover rounded-lg border border-gray-700">
-                                <img src="./10740.jpg" alt="足の脱毛施術" class="w-full h-24 sm:h-32 object-cover rounded-lg border border-gray-700">
+                            <!-- 実装：顔・腕・足の3連施術ギャラリー -->
+                            <div class="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
+                                <div class="relative group rounded-lg overflow-hidden border border-gray-700">
+                                    <img src="./Kao.jpg" alt="お顔の脱毛施術" class="w-full h-20 sm:h-28 object-cover group-hover:scale-110 transition duration-300">
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 text-center text-[10px] text-white py-1">お顔</div>
+                                </div>
+                                <div class="relative group rounded-lg overflow-hidden border border-gray-700">
+                                    <img src="./Ude.jpg" alt="腕の脱毛施術" class="w-full h-20 sm:h-28 object-cover group-hover:scale-110 transition duration-300">
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 text-center text-[10px] text-white py-1">腕</div>
+                                </div>
+                                <div class="relative group rounded-lg overflow-hidden border border-gray-700">
+                                    <img src="./Ashi.jpg" alt="足の脱毛施術" class="w-full h-20 sm:h-28 object-cover group-hover:scale-110 transition duration-300">
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 text-center text-[10px] text-white py-1">足</div>
+                                </div>
                             </div>
 
                             <div class="mt-4 pt-3 border-t border-gray-700 flex justify-between items-center">
@@ -274,7 +275,6 @@
                         </div>
                     </div>
 
-                    <!-- 脱毛ガイド1 -->
                     <div class="mt-6 pt-6 border-t border-gray-700">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="w-2 h-2 rounded-full bg-gold"></span>
@@ -282,42 +282,29 @@
                         </div>
                         <div class="rounded-xl overflow-hidden border border-gold/40 shadow-lg bg-black/40">
                             <a href="./hair-removal-guide.jpg?v=final" target="_blank" class="block group">
-                                <img src="./hair-removal-guide.jpg?v=final" alt="光脱毛ってなんですか？ 毛周期とお客様の声" class="w-full h-auto object-cover group-hover:opacity-90 transition">
+                                <img src="./hair-removal-guide.jpg?v=final" alt="光脱毛ってなんですか？" class="w-full h-auto object-cover group-hover:opacity-90 transition">
                             </a>
-                            <div class="p-3 bg-dark-900 text-[11px] text-gray-400 flex justify-between items-center">
-                                <span>※ワキなら1分・じんわり温かい体感。8〜12回を目安に毛周期に合わせて通っていただけます。</span>
-                                <a href="./hair-removal-guide.jpg?v=final" target="_blank" class="text-gold hover:underline flex items-center gap-1 font-bold">
-                                    <i class="fa-solid fa-magnifying-glass-plus"></i> 画像を拡大
-                                </a>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- 脱毛ガイド2 -->
                     <div class="mt-6 pt-6 border-t border-gray-700">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="w-2 h-2 rounded-full bg-gold"></span>
-                            <h4 class="text-sm font-bold text-gold-light">【ご来店前のお願い】脱毛効果を高める3つの自己処理ポイント</h4>
+                            <h4 class="text-sm font-bold text-gold-light">【ご来店前のお願い】脱毛効果を高める3つの自己処理</h4>
                         </div>
                         <div class="rounded-xl overflow-hidden border border-gold/40 shadow-lg bg-black/40">
                             <a href="./self-care.jpg?v=final" target="_blank" class="block group">
-                                <img src="./self-care.jpg?v=final" alt="3つの正しい自己処理のポイント" class="w-full h-auto object-cover group-hover:opacity-90 transition">
+                                <img src="./self-care.jpg?v=final" alt="3つの正しい自己処理" class="w-full h-auto object-cover group-hover:opacity-90 transition">
                             </a>
-                            <div class="p-3 bg-dark-900 text-[11px] text-gray-400 flex justify-between items-center">
-                                <span>※前日夜（ヒゲは当日朝）に電気シェーバーで1mm程度に剃毛をお願いします。</span>
-                                <a href="./self-care.jpg?v=final" target="_blank" class="text-gold hover:underline flex items-center gap-1 font-bold">
-                                    <i class="fa-solid fa-magnifying-glass-plus"></i> 画像を拡大
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. セルフホワイトニング（画像追加レイアウト変更） -->
+                <!-- 2. セルフホワイトニング -->
                 <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 items-center">
                         <div class="w-full md:w-1/3 bg-dark-900 rounded-xl p-2 border border-gold/30 flex items-center justify-center overflow-hidden">
-                            <img src="./10702.jpg" alt="セルフホワイトニング専用チェア" class="h-48 w-full object-cover rounded-lg">
+                            <img src="./White.jpg" alt="セルフホワイトニング専用チェア" class="h-48 w-full object-cover rounded-lg hover:scale-105 transition duration-500">
                         </div>
                         <div class="w-full md:w-2/3">
                             <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
@@ -335,11 +322,11 @@
                     </div>
                 </div>
 
-                <!-- 3. セルキュア4T++（画像追加レイアウト変更） -->
+                <!-- 3. セルキュア4T++ -->
                 <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 items-center">
                         <div class="w-full md:w-1/3 bg-dark-900 rounded-xl p-2 border border-gold/30 flex items-center justify-center overflow-hidden">
-                            <img src="./10738.jpg" alt="セルキュア4T++ フェイシャル施術" class="h-48 w-full object-cover rounded-lg">
+                            <img src="./CELLcure.jpg" alt="セルキュア4T++ フェイシャル施術" class="h-48 w-full object-cover rounded-lg hover:scale-105 transition duration-500">
                         </div>
                         <div class="w-full md:w-2/3">
                             <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-3">
@@ -357,7 +344,7 @@
                                 <li><i class="fa-solid fa-check text-gold mr-1"></i> たるみ・むくみケア</li>
                                 <li><i class="fa-solid fa-check text-gold mr-1"></i> フェイスラインの引き締め</li>
                                 <li><i class="fa-solid fa-check text-gold mr-1"></i> ハリ・弾力アップ</li>
-                                <li><i class="fa-solid fa-check text-gold mr-1"></i> くすみ改善で透明感のあるお肌に</li>
+                                <li><i class="fa-solid fa-check text-gold mr-1"></i> くすみ改善で美肌へ</li>
                             </ul>
                         </div>
                     </div>
@@ -381,7 +368,7 @@
         </div>
     </section>
 
-    <!-- ★YouTube サロン動画セクション -->
+    <!-- YouTube サロン動画セクション -->
     <section id="movie" class="py-16 bg-dark-800 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-8">
@@ -392,7 +379,6 @@
                 <p class="text-xs md:text-sm text-gray-400 mt-2">サロンのリアルな施術風景や雰囲気を動画でご覧いただけます。</p>
             </div>
 
-            <!-- YouTube Shorts縦型レスポンシブコンテナ -->
             <div class="max-w-xs mx-auto rounded-2xl overflow-hidden border-2 border-gold/50 shadow-2xl bg-black relative" style="aspect-ratio: 9/16;">
                 <iframe class="w-full h-full" 
                         src="https://www.youtube-nocookie.com/embed/ospVmfaDJf0" 
@@ -410,7 +396,7 @@
         </div>
     </section>
 
-    <!-- ★新規追加：サロンギャラリー★ -->
+    <!-- サロンギャラリー（最適化画像反映済み） -->
     <section id="gallery" class="py-16 bg-dark-900 border-t border-gray-800">
         <div class="max-w-5xl mx-auto px-4" data-aos="fade-up">
             <div class="text-center mb-10">
@@ -420,23 +406,20 @@
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <!-- ウェルカムスペース -->
                 <div class="rounded-xl overflow-hidden border border-gray-700 group h-48 sm:h-56">
-                    <img src="./10711.jpg" alt="ウェルカムスペース" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="./welcome.jpg" alt="ウェルカムスペース" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                 </div>
-                <!-- 施術ベッド全体 -->
                 <div class="rounded-xl overflow-hidden border border-gray-700 group h-48 sm:h-56">
-                    <img src="./10703.jpg" alt="清潔な施術ベッドと脱毛機" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="./Datsumou.jpg" alt="清潔な施術ベッドと脱毛機" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                 </div>
-                <!-- ベッドアップ -->
                 <div class="rounded-xl overflow-hidden border border-gray-700 group h-48 sm:h-56 sm:col-span-2 md:col-span-1">
-                    <img src="./10708.jpg" alt="落ち着いたプライベート空間" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="./Bed.jpg" alt="落ち着いたプライベート空間" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- スタッフ紹介セクション -->
+    <!-- スタッフ紹介 -->
     <section id="staff" class="py-16 bg-dark-900 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12" data-aos="fade-up">
@@ -446,7 +429,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 1. NATSUMI -->
                 <div class="bg-dark-800 border border-gold/40 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between" data-aos="fade-right">
                     <div>
                         <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-gold mb-4 shadow-lg bg-dark-700">
@@ -458,17 +440,13 @@
                             丁寧なカウンセリングでお肌の悩みに寄り添い、確かな技術を提供いたします。配信やSNSでもサロンの情報を発信中。
                         </p>
                     </div>
-
                     <div class="mt-6 pt-4 border-t border-gray-700">
                         <a href="https://lit.link/_naaa" target="_blank" rel="noopener noreferrer" class="w-full btn-gold text-black font-extrabold text-sm py-3.5 px-4 rounded-xl shadow-lg flex items-center justify-center gap-2 hover:opacity-90 transition">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            NATSUMI 公式リットリンクを開く
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> NATSUMI 公式リンク
                         </a>
-                        <span class="text-[10px] text-gray-400 block mt-2">SNS・配信活動をチェック</span>
                     </div>
                 </div>
 
-                <!-- 2. YUME -->
                 <div class="bg-dark-800 border border-gold/40 rounded-2xl p-6 text-center hover:border-gold transition shadow-xl flex flex-col justify-between" data-aos="fade-left">
                     <div>
                         <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-gold mb-4 shadow-lg bg-dark-700">
@@ -480,13 +458,10 @@
                             リラックスしていただける上質な空間と丁寧な施術をお届けします。初めての美容サロン通いも安心してお任せください。
                         </p>
                     </div>
-
                     <div class="mt-6 pt-4 border-t border-gray-700">
                         <a href="https://lit.link/7ebe1cf1-00a7-47bb-8fb1-c6ad041c2535" target="_blank" rel="noopener noreferrer" class="w-full btn-gold text-black font-extrabold text-sm py-3.5 px-4 rounded-xl shadow-lg flex items-center justify-center gap-2 hover:opacity-90 transition">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            YUME 公式リットリンクを開く
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> YUME 公式リンク
                         </a>
-                        <span class="text-[10px] text-gray-400 block mt-2">SNS・リンク集をチェック</span>
                     </div>
                 </div>
             </div>
@@ -536,7 +511,7 @@
         <p>&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
     </footer>
 
-    <!-- ★スマホ追従型 予約バー（公式LINE直通）★ -->
+    <!-- スマホ追従型 予約バー -->
     <div class="fixed bottom-0 left-0 w-full p-3 bg-dark-900/95 backdrop-blur-md border-t border-gold/30 z-50">
         <div class="max-w-md mx-auto">
             <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="w-full btn-line text-white font-extrabold text-sm md:text-base py-3.5 px-6 rounded-full shadow-2xl flex items-center justify-center gap-2">
