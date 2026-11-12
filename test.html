@@ -3,159 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUVIA MENU TEST</title>
-  <!-- これがデザインを読み込むための必須エンジンです -->
+  <title>LUVIA MENU FULL</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* スマホでの改行を美しくするための微調整 */
+    .menu-name { word-break: keep-all; overflow-wrap: anywhere; }
+  </style>
 </head>
-<body class="bg-black">
+<body class="bg-black text-white font-sans pb-10">
 
-<!-- LUVIA PRICE LIST SECTION -->
-<section id="price-list" class="bg-black text-white py-12 px-4 font-sans">
-  <div class="max-w-md mx-auto">
-    
-    <!-- タイトル -->
-    <div class="text-center mb-8">
-      <h2 class="text-3xl text-yellow-500 font-bold tracking-widest border-b border-yellow-500 pb-3 inline-block">PRICE LIST</h2>
-      <p class="text-xs text-gray-400 mt-4 leading-relaxed">
-        ※価格はすべて税込です。<br>
-        当店は安心の【完全都度払い制】。<br>
-        高額コースやローン勧誘は一切ございません。
-      </p>
-    </div>
-
-    <!-- 1. レディース脱毛 -->
-    <div class="mb-10">
-      <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Ladies 脱毛</h3>
-      <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
-        <table class="w-full text-xs text-center border-collapse">
-          <thead class="bg-gray-900 text-gray-300">
-            <tr>
-              <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
-              <th class="p-2 border-b border-l border-gray-700 font-normal">通常</th>
-              <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal">LINE会員</th>
-              <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal">初回新規</th>
-            </tr>
-          </thead>
-          <tbody class="bg-black">
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">全身 (顔・VIO込)</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥18,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥11,000</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥9,800</td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">全身 (顔・VIO無)</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,800</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥7,800</td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">お顔 全体</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥7,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥5,980</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥3,680</td>
-            </tr>
-            <tr>
-              <td class="p-2 text-left leading-tight">各種セット脱毛<br><span class="text-[10px] text-gray-500">(腕/脚/背中など)</span></td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,890</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥5,980</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- 2. メンズ脱毛 -->
-    <div class="mb-10">
-      <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Mens 脱毛</h3>
-      <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
-        <table class="w-full text-xs text-center border-collapse">
-          <thead class="bg-gray-900 text-gray-300">
-            <tr>
-              <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
-              <th class="p-2 border-b border-l border-gray-700 font-normal">通常</th>
-              <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal">LINE会員</th>
-              <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal">初回新規</th>
-            </tr>
-          </thead>
-          <tbody class="bg-black">
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">全身 (顔・VIO込)</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥25,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥19,800</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥14,800</td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">全身 (顔・VIO無)</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥20,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥14,800</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥12,000</td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="p-2 text-left">ひげ 全体</td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥8,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥6,980</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥4,680</td>
-            </tr>
-            <tr>
-              <td class="p-2 text-left leading-tight">各種セット脱毛<br><span class="text-[10px] text-gray-500">(腕/脚/背中など)</span></td>
-              <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
-              <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,890</td>
-              <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- 3. フェイシャル＆その他 -->
-    <div class="mb-4">
-      <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Facial & Beauty</h3>
-      <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg bg-black p-4">
-        
-        <!-- セルキュア -->
-        <div class="mb-4 border-b border-gray-800 pb-4">
-          <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-semibold">【セルキュア4T++】フェイシャル</span>
-            <span class="text-yellow-500 font-bold">¥12,000</span>
-          </div>
-          <p class="text-[10px] text-gray-400">デコルテマッサージ含む / 特許波長でお顔の引き締め</p>
-        </div>
-
-        <div class="mb-4 border-b border-gray-800 pb-4">
-          <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-semibold">セルキュア ヘッドスパ付き</span>
-            <span class="text-yellow-500 font-bold">¥13,500</span>
-          </div>
-          <p class="text-[10px] text-gray-400">フェイシャルとヘッドスパを同時に極上ケア</p>
-        </div>
-
-        <!-- ホワイトニング -->
-        <div class="mb-4 border-b border-gray-800 pb-4">
-          <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-semibold">セルフホワイトニング</span>
-            <div class="text-right">
-              <span class="text-[10px] text-red-400 mr-1">初回</span><span class="text-red-400 font-bold mr-3">¥980</span>
-              <span class="text-yellow-500 font-bold">¥6,000</span>
-            </div>
-          </div>
-          <p class="text-[10px] text-gray-400">痛みが少なく自然で美しい白い歯へ</p>
-        </div>
-
-        <!-- INFINITY CHAIN -->
-        <div>
-          <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-semibold">INFINITY CHAIN <span class="text-[10px] font-normal">(ジュエリー)</span></span>
-            <span class="text-yellow-500 font-bold">¥6,000〜</span>
-          </div>
-          <p class="text-[10px] text-gray-400">ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
-        </div>
-
-      </div>
-    </div>
-
+<section id="price-list" class="max-w-md mx-auto py-10 px-3">
+  
+  <!-- タイトル -->
+  <div class="text-center mb-8">
+    <h2 class="text-3xl text-yellow-500 font-bold tracking-widest border-b border-yellow-500 pb-3 inline-block">PRICE LIST</h2>
+    <p class="text-[11px] text-gray-400 mt-4 leading-relaxed">
+      ※価格はすべて税込です。<br>
+      当店は安心の【完全都度払い制】。<br>
+      高額コースやローン勧誘は一切ございません。
+    </p>
   </div>
+
+  <!-- ===============================
+       1. Ladies 脱毛
+  ================================ -->
+  <div class="mb-10">
+    <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Ladies 脱毛</h3>
+    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
+      <table class="w-full text-[10px] sm:text-xs text-center border-collapse">
+        <thead class="bg-gray-900 text-gray-300">
+          <tr>
+            <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
+            <th class="p-2 border-b border-l border-gray-700 font-normal w-1/5">通常</th>
+            <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal w-1/5">LINE会員</th>
+            <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal w-1/5">初回新規</th>
+          </tr>
+        </thead>
+        <tbody class="bg-black">
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">全身<br><span class="text-[9px] text-gray-400">(顔・VIO込)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥18,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥11,000</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥9,800</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">全身<br><span class="text-[9px] text-gray-400">(顔・VIO無)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,800</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥7,800</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">顔 全体</td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥7,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥5,980</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥3,680</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">VIO</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥9,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(ワキ/ひじ下/ひざ下)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,880</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥5,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(あし全体/甲指含)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥5,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(うで全体/甲指含)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥5,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(背中上下/うなじ)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥5,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">Mパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥6,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr>
+            <td class="p-2 text-left menu-name">Sパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥3,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===============================
+       2. Mens 脱毛
+  ================================ -->
+  <div class="mb-10">
+    <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Mens 脱毛</h3>
+    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
+      <table class="w-full text-[10px] sm:text-xs text-center border-collapse">
+        <thead class="bg-gray-900 text-gray-300">
+          <tr>
+            <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
+            <th class="p-2 border-b border-l border-gray-700 font-normal w-1/5">通常</th>
+            <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal w-1/5">LINE会員</th>
+            <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal w-1/5">初回新規</th>
+          </tr>
+        </thead>
+        <tbody class="bg-black">
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">全身<br><span class="text-[9px] text-gray-400">(顔・VIO込)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥25,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥19,800</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥14,800</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">全身<br><span class="text-[9px] text-gray-400">(顔・VIO無)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥20,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥14,800</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥12,000</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">ひげ 全体</td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥8,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥6,980</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥4,680</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(ワキ/ひじ下/ひざ下)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(あし全体/甲指含)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(うで全体/甲指含)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">セット<br><span class="text-[9px] text-gray-400">(背中上下/うなじ)</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥15,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥9,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">Mパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥8,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr>
+            <td class="p-2 text-left menu-name">Sパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥4,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===============================
+       3. Kids & U24 脱毛
+  ================================ -->
+  <div class="mb-10">
+    <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Kids & 学割U24</h3>
+    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
+      <table class="w-full text-[10px] sm:text-xs text-center border-collapse">
+        <thead class="bg-gray-900 text-gray-300">
+          <tr>
+            <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
+            <th class="p-2 border-b border-l border-gray-700 font-normal w-1/5">通常</th>
+            <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal w-1/5">LINE会員</th>
+            <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal w-1/5">初回新規</th>
+          </tr>
+        </thead>
+        <tbody class="bg-black">
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">【Kids】<br>全身(顔VIO無)</td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥6,980</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">【Kids】<br>セット各部位</td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥8,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥4,980</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">【Kids】Mパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥3,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name">【Kids】Sパーツ</td>
+            <td class="p-2 border-l border-gray-800 text-gray-200">¥1,500</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr>
+            <td class="p-2 text-left menu-name">【学割U24】<br>セット各部位</td>
+            <td class="p-2 border-l border-gray-800 text-gray-400 line-through">¥10,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥7,890</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥4,980</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===============================
+       4. フェイシャル＆その他
+  ================================ -->
+  <div class="mb-4">
+    <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Facial & Beauty</h3>
+    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg bg-black p-4">
+      
+      <!-- セルキュア -->
+      <div class="mb-4 border-b border-gray-800 pb-4">
+        <div class="flex justify-between items-center mb-1">
+          <span class="text-sm font-semibold">【セルキュア4T++】フェイシャル</span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span class="text-gray-400 line-through mr-2">通常 ¥12,000</span>
+          <span class="text-yellow-500 font-bold mr-2">LINE ¥8,980</span>
+          <span class="text-red-400 font-bold">新規 ¥6,980</span>
+        </div>
+        <p class="text-[9px] text-gray-400 mt-1">デコルテマッサージ含む / 特許波長でお顔の引き締め</p>
+      </div>
+
+      <div class="mb-4 border-b border-gray-800 pb-4">
+        <div class="flex justify-between items-center mb-1">
+          <span class="text-sm font-semibold">【セルキュア】ヘッドスパ</span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span class="text-gray-400 line-through mr-2">通常 ¥12,000</span>
+          <span class="text-yellow-500 font-bold mr-2">LINE ¥6,980</span>
+          <span class="text-red-400 font-bold">新規 ¥6,980</span>
+        </div>
+        <p class="text-[9px] text-gray-400 mt-1">頭皮クレンジング〜活性化まで</p>
+      </div>
+
+      <div class="mb-4 border-b border-gray-800 pb-4">
+        <div class="flex justify-between items-center mb-1">
+          <span class="text-sm font-semibold">【セルキュア】ヘッドスパ付フェイシャル</span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span class="text-gray-400 line-through mr-2">通常 ¥13,500</span>
+          <span class="text-yellow-500 font-bold mr-2">LINE ¥10,500</span>
+          <span class="text-red-400 font-bold">新規 ¥8,500</span>
+        </div>
+      </div>
+
+      <div class="mb-4 border-b border-gray-800 pb-4">
+        <span class="text-sm font-semibold">【セルキュア オプション】</span>
+        <div class="flex flex-col text-xs text-gray-300 mt-2 space-y-1 ml-2">
+          <div class="flex justify-between"><span>クレンジング (毛穴洗浄)</span><span>¥1,000</span></div>
+          <div class="flex justify-between"><span>EMS</span><span>¥1,000</span></div>
+          <div class="flex justify-between"><span>ポレーション (導入)</span><span>¥1,000</span></div>
+        </div>
+      </div>
+
+      <!-- ホワイトニング -->
+      <div class="mb-4 border-b border-gray-800 pb-4">
+        <div class="flex justify-between items-center mb-1">
+          <span class="text-sm font-semibold">セルフホワイトニング</span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span class="text-gray-400 line-through mr-2">通常 ¥6,000</span>
+          <span class="text-yellow-500 font-bold mr-2">LINE ¥3,980</span>
+          <span class="text-red-400 font-bold">新規 ¥980</span>
+        </div>
+        <p class="text-[9px] text-gray-400 mt-1">痛みが少なく自然で美しい白い歯へ</p>
+      </div>
+
+      <!-- INFINITY CHAIN -->
+      <div>
+        <div class="flex justify-between items-center mb-1">
+          <span class="text-sm font-semibold">INFINITY CHAIN <span class="text-[10px] font-normal text-gray-400">(ジュエリー)</span></span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span class="text-gray-300 mr-2">通常 ¥6,000〜</span>
+          <span class="text-yellow-500 font-bold">LINE会員 ¥2,000 OFF</span>
+        </div>
+        <p class="text-[9px] text-gray-400 mt-1">ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
+      </div>
+
+    </div>
+  </div>
+
 </section>
 
 </body>
