@@ -232,82 +232,80 @@
   </div>
 
   <!-- ===============================
-       4. フェイシャル＆その他
+       4. Facial & Beauty
   ================================ -->
   <div class="mb-4">
     <h3 class="text-xl text-yellow-400 border-l-4 border-yellow-500 pl-3 mb-4 font-semibold tracking-wide">Facial & Beauty</h3>
-    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg bg-black p-4">
-      
-      <!-- セルキュア -->
-      <div class="mb-4 border-b border-gray-800 pb-4">
-        <div class="flex justify-between items-center mb-1">
-          <span class="text-sm font-semibold">【セルキュア4T++】フェイシャル</span>
-        </div>
-        <div class="flex justify-between items-center text-xs mt-1">
-          <span class="text-gray-300 mr-2">通常 ¥12,000</span>
-          <span class="text-yellow-500 font-bold mr-2">LINE ¥8,980</span>
-          <span class="text-red-400 font-bold">新規 ¥6,980</span>
-        </div>
-        <p class="text-[9px] text-gray-400 mt-1">デコルテマッサージ含む / 特許波長でお顔の引き締め</p>
-      </div>
-
-      <div class="mb-4 border-b border-gray-800 pb-4">
-        <div class="flex justify-between items-center mb-1">
-          <span class="text-sm font-semibold">【セルキュア】ヘッドスパ</span>
-        </div>
-        <div class="flex justify-between items-center text-xs mt-1">
-          <span class="text-gray-300 mr-2">通常 ¥12,000</span>
-          <span class="text-yellow-500 font-bold mr-2">LINE ¥6,980</span>
-          <span class="text-red-400 font-bold">新規 ¥6,980</span>
-        </div>
-        <p class="text-[9px] text-gray-400 mt-1">頭皮クレンジング〜活性化まで</p>
-      </div>
-
-      <div class="mb-4 border-b border-gray-800 pb-4">
-        <div class="flex justify-between items-center mb-1">
-          <span class="text-sm font-semibold">【セルキュア】ヘッドスパ付フェイシャル</span>
-        </div>
-        <div class="flex justify-between items-center text-xs mt-1">
-          <span class="text-gray-300 mr-2">通常 ¥13,500</span>
-          <span class="text-yellow-500 font-bold mr-2">LINE ¥10,500</span>
-          <span class="text-red-400 font-bold">新規 ¥8,500</span>
-        </div>
-      </div>
-
-      <div class="mb-4 border-b border-gray-800 pb-4">
-        <span class="text-sm font-semibold">【セルキュア オプション】</span>
-        <div class="flex flex-col text-xs text-gray-300 mt-2 space-y-1 ml-2">
-          <div class="flex justify-between"><span>クレンジング (毛穴洗浄)</span><span>¥1,000</span></div>
-          <div class="flex justify-between"><span>EMS</span><span>¥1,000</span></div>
-          <div class="flex justify-between"><span>ポレーション (導入)</span><span>¥1,000</span></div>
-        </div>
-      </div>
-
-      <!-- ホワイトニング -->
-      <div class="mb-4 border-b border-gray-800 pb-4">
-        <div class="flex justify-between items-center mb-1">
-          <span class="text-sm font-semibold">セルフホワイトニング</span>
-        </div>
-        <div class="flex justify-between items-center text-xs mt-1">
-          <span class="text-gray-300 mr-2">通常 ¥6,000</span>
-          <span class="text-yellow-500 font-bold mr-2">LINE ¥3,980</span>
-          <span class="text-red-400 font-bold">新規 ¥980</span>
-        </div>
-        <p class="text-[9px] text-gray-400 mt-1">痛みが少なく自然で美しい白い歯へ</p>
-      </div>
-
-      <!-- INFINITY CHAIN -->
-      <div>
-        <div class="flex justify-between items-center mb-1">
-          <span class="text-sm font-semibold">INFINITY CHAIN <span class="text-[10px] font-normal text-gray-400">(ジュエリー)</span></span>
-        </div>
-        <div class="flex justify-between items-center text-xs mt-1">
-          <span class="text-gray-300 mr-2">通常 ¥6,000〜</span>
-          <span class="text-yellow-500 font-bold">LINE会員 ¥2,000 OFF</span>
-        </div>
-        <p class="text-[9px] text-gray-400 mt-1">ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
-      </div>
-
+    <div class="rounded-md border border-gray-700 overflow-hidden shadow-lg">
+      <table class="w-full text-[10px] sm:text-xs text-center border-collapse">
+        <thead class="bg-gray-900 text-gray-300">
+          <tr>
+            <th class="p-2 text-left border-b border-gray-700 w-2/5">メニュー</th>
+            <th class="p-2 border-b border-l border-gray-700 font-normal w-1/5">通常</th>
+            <th class="p-2 border-b border-l border-gray-700 text-yellow-500 font-normal w-1/5">LINE会員</th>
+            <th class="p-2 border-b border-l border-gray-700 text-red-400 font-normal w-1/5">初回新規</th>
+          </tr>
+        </thead>
+        <tbody class="bg-black">
+          <!-- セルキュア フェイシャル -->
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name leading-tight">【セルキュア4T++】<br>フェイシャル<br><span class="text-[8px] text-gray-400">デコルテマッサージ含む / 特許波長でお顔の引き締め</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥12,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥8,980</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <!-- セルキュア ヘッドスパ -->
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name leading-tight">【セルキュア】<br>ヘッドスパ<br><span class="text-[8px] text-gray-400">頭皮クレンジング〜活性化まで</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥12,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥6,980</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥6,980</td>
+          </tr>
+          <!-- セルキュア ヘッドスパ付フェイシャル -->
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name leading-tight">【セルキュア】<br>ヘッドスパ付フェイシャル</td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥13,500</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥10,500</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥8,500</td>
+          </tr>
+          <!-- オプション -->
+          <tr class="border-b border-gray-800 bg-gray-900/40">
+            <td class="p-2 text-left menu-name font-semibold text-gray-300" colspan="4">【セルキュア オプション】</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name pl-4">・クレンジング(毛穴洗浄)</td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥1,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name pl-4">・EMS</td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥1,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name pl-4">・ポレーション(導入)</td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥1,000</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+          <!-- ホワイトニング -->
+          <tr class="border-b border-gray-800">
+            <td class="p-2 text-left menu-name leading-tight">セルフホワイトニング<br><span class="text-[8px] text-gray-400">痛みが少なく自然で美しい白い歯へ</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥6,000</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold">¥3,980</td>
+            <td class="p-2 border-l border-gray-800 text-red-400 font-bold">¥980</td>
+          </tr>
+          <!-- INFINITY CHAIN -->
+          <tr>
+            <td class="p-2 text-left menu-name leading-tight">INFINITY CHAIN<br><span class="text-[8px] text-gray-400">(ジュエリー)</span><br><span class="text-[8px] text-gray-500">ブレス¥6000/アンクレット¥8000/ネックレス¥10000</span></td>
+            <td class="p-2 border-l border-gray-800 text-gray-300">¥6,000〜</td>
+            <td class="p-2 border-l border-gray-800 text-yellow-500 font-bold leading-tight tracking-tighter">¥2,000<br>OFF</td>
+            <td class="p-2 border-l border-gray-800 text-gray-600">-</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
