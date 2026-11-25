@@ -93,7 +93,7 @@
             color: #070709;
             border-color: transparent;
         }
-        /* 微細な大理石・シルク風の背景テクスチャ感 */
+        /* 微細なシルク・光沢風の背景グラデーション */
         .bg-luxury-radial {
             background-image: radial-gradient(circle at 80% 20%, rgba(200, 163, 73, 0.11) 0%, transparent 45%),
                               radial-gradient(circle at 15% 80%, rgba(200, 163, 73, 0.07) 0%, transparent 45%);
@@ -104,17 +104,17 @@
 
     <!-- ヘッダー（漆黒ガラス×シャンパンゴールド） -->
     <header class="fixed top-0 left-0 w-full bg-obsidian-950/90 backdrop-blur-md z-50 border-b gold-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
-            <a href="#" class="flex flex-col">
-                <span class="text-2xl md:text-3xl font-en font-bold tracking-[0.25em] gold-foil-text leading-none">LUVIA</span>
-                <span class="text-[9px] tracking-[0.2em] text-pearl-muted mt-0.5 uppercase">Total Beauty Salon</span>
+        <div class="max-w-6xl mx-auto px-3 sm:px-6 h-16 md:h-20 flex items-center justify-between gap-2">
+            <a href="#" class="flex flex-col flex-shrink-0">
+                <span class="text-xl sm:text-2xl md:text-3xl font-en font-bold tracking-[0.22em] gold-foil-text leading-none">LUVIA</span>
+                <span class="text-[8px] sm:text-[9px] tracking-[0.16em] text-pearl-muted mt-0.5 uppercase whitespace-nowrap">Total Beauty Salon</span>
             </a>
-            <nav class="flex items-center space-x-4 md:space-x-7 text-xs md:text-sm font-medium text-pearl-muted">
+            <nav class="flex items-center space-x-2.5 sm:space-x-5 md:space-x-7 text-[11px] sm:text-xs md:text-sm font-medium text-pearl-muted whitespace-nowrap">
                 <a href="#campaign" class="hover:text-gold-light transition">初回特典</a>
                 <a href="#price" class="hover:text-gold-light transition">料金表</a>
                 <a href="#menu" class="hover:text-gold-light transition">施術内容</a>
                 <a href="#staff" class="hidden sm:inline hover:text-gold-light transition">認証ライバー</a>
-                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="gold-foil-bg text-obsidian-950 font-bold text-xs px-4 py-2 rounded-full hover:opacity-90 transition tracking-wider shadow-md">
+                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="gold-foil-bg text-obsidian-950 font-bold text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:opacity-90 transition tracking-wider shadow-md flex-shrink-0">
                     LINE予約
                 </a>
             </nav>
@@ -126,48 +126,47 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <!-- 左カラム：認証現役ライバー訴求＆ブランドコピー＆LINE誘導 -->
+                <!-- 左カラム：認証現役ライバー訴求＆親目線コピー＆LINE誘導 -->
                 <div class="lg:col-span-6 text-center lg:text-left order-2 lg:order-1" data-aos="fade-up" data-aos-duration="900">
                     
-                    <!-- 最重要アイキャッチ：認証現役ライバー施術バッジ -->
-                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-obsidian-800 border gold-border-strong shadow-lg mb-5">
-                        <i class="fa-solid fa-certificate text-gold-light text-sm"></i>
-                        <span class="text-xs sm:text-sm font-serif font-semibold tracking-widest gold-foil-text">
+                    <!-- 最重要アイキャッチ：認証現役プロライバー施術バッジ -->
+                    <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-obsidian-800 border gold-border-strong shadow-lg mb-4 max-w-full">
+                        <i class="fa-solid fa-certificate text-gold-light text-xs sm:text-sm flex-shrink-0"></i>
+                        <span class="text-[11px] sm:text-sm font-serif font-semibold tracking-wider gold-foil-text">
                             公式認証・現役プロライバーが直接施術
                         </span>
                     </div>
 
-                    <p class="font-serif text-sm sm:text-base md:text-lg tracking-[0.22em] text-gold-pale/90 mb-2">
-                        愛知県稲沢市｜完全予約制プライベートサロン
+                    <p class="font-serif text-xs sm:text-base md:text-lg tracking-[0.14em] sm:tracking-[0.2em] text-gold-pale/90 mb-2">
+                        愛知県稲沢市｜完全予約制サロン
                     </p>
 
-                    <h1 class="font-serif text-2xl sm:text-3xl md:text-[38px] font-bold leading-[1.42] text-pearl mb-5">
-                        <span class="gold-foil-text">認証現役ライバー</span>が手がける、<br>
+                    <h1 class="font-serif text-[22px] sm:text-3xl md:text-[36px] font-bold leading-[1.45] text-pearl mb-5">
+                        <span class="gold-foil-text">認証現役プロライバー</span>が手がける、<br>
                         美意識を磨く<span class="border-b border-gold-light pb-1">完全都度払い</span>サロン
                     </h1>
 
                     <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed mb-7 max-w-xl mx-auto lg:mx-0">
-                        人前に立つプロとして「魅せる美」を追求し続ける認証現役ライバーが、丁寧なカウンセリングと確かな技術であなたをプロデュース。<br class="hidden sm:inline">
-                        高額ローン・回数券勧誘は一切なし。1組様限定の清潔な個室空間でお迎えします。
+                        5人の子どもを育てる親だから分かる、忙しい毎日や出費・身だしなみのリアルな悩み。自分のことは後回しになりがちな方にも、気兼ねなく通ってほしいという想いから生まれました。<br class="hidden sm:inline">
+                        高額ローン・回数券勧誘は一切なし。安心の完全都度払いで、丁寧なカウンセリングと確かな技術をお届けします。
                     </p>
 
                     <!-- 黒×金ラグジュアリーLINE予約カード -->
                     <div class="bg-obsidian-900/95 border gold-border-strong rounded-2xl p-5 sm:p-6 luxury-dark-shadow max-w-lg mx-auto lg:mx-0 relative overflow-hidden">
-                        <!-- 上部ゴールドアクセントライン -->
                         <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
 
-                        <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+                        <div class="flex items-center justify-between gap-2 border-b border-white/10 pb-3 mb-4">
                             <span class="text-xs font-serif font-semibold tracking-wider text-gold-light">
                                 <i class="fa-solid fa-crown text-gold mr-1.5"></i>公式LINE限定 特別ご優待枠
                             </span>
-                            <span class="text-[11px] text-gold-pale bg-obsidian-800 px-2.5 py-0.5 rounded-full border gold-border">
+                            <span class="text-[10px] sm:text-[11px] text-gold-pale bg-obsidian-800 px-2.5 py-0.5 rounded-full border gold-border whitespace-nowrap">
                                 2回目以降も会員価格
                             </span>
                         </div>
 
                         <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer"
                            class="btn-line-luxury flex items-center justify-center gap-3 w-full py-4 px-5 text-white font-bold text-sm sm:text-base rounded-xl tracking-wide">
-                            <i class="fa-brands fa-line text-2xl"></i>
+                            <i class="fa-brands fa-line text-2xl flex-shrink-0"></i>
                             <span>公式LINEで空き状況・施術枠を予約する</span>
                         </a>
 
@@ -181,26 +180,25 @@
                 <!-- 右カラム：認証現役プロライバー所属＆4メニュービジュアル（11235.jpg）を主役配置 -->
                 <div class="lg:col-span-6 order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000">
                     <div class="relative max-w-lg mx-auto">
-                        <!-- ゴールド二重額縁フレーム -->
                         <div class="p-2 sm:p-3 bg-gradient-to-br from-gold-light/40 via-obsidian-800 to-gold-dark/40 rounded-2xl border gold-border-strong luxury-dark-shadow">
                             <div class="rounded-xl overflow-hidden bg-pearl relative">
                                 <img src="./11235.jpg" alt="LUVIA 認証現役プロライバー所属・脱毛・セルフホワイトニング・セルキュア4T++・INFINITY CHAIN" class="w-full h-auto object-cover">
                             </div>
                         </div>
 
-                        <!-- 信頼性・清潔感を示す3つのゴールドプレート -->
-                        <div class="grid grid-cols-3 gap-2.5 mt-3.5 text-center">
-                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
-                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Certified Liver</p>
-                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">認証ライバー施術</p>
+                        <!-- 3つのゴールドプレート -->
+                        <div class="grid grid-cols-3 gap-2 sm:gap-2.5 mt-3.5 text-center">
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-1.5 sm:px-2 shadow-md">
+                                <p class="text-[9px] sm:text-[10px] text-gold-light font-en tracking-widest uppercase">Certified Liver</p>
+                                <p class="text-[11px] sm:text-xs font-serif font-semibold text-pearl mt-0.5">認証ライバー施術</p>
                             </div>
-                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
-                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Pay Per Visit</p>
-                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">完全都度払い制</p>
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-1.5 sm:px-2 shadow-md">
+                                <p class="text-[9px] sm:text-[10px] text-gold-light font-en tracking-widest uppercase">Pay Per Visit</p>
+                                <p class="text-[11px] sm:text-xs font-serif font-semibold text-pearl mt-0.5">完全都度払い制</p>
                             </div>
-                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
-                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Private Room</p>
-                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">完全予約・個室</p>
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-1.5 sm:px-2 shadow-md">
+                                <p class="text-[9px] sm:text-[10px] text-gold-light font-en tracking-widest uppercase">Parent Care</p>
+                                <p class="text-[11px] sm:text-xs font-serif font-semibold text-pearl mt-0.5">親目線の寄り添い</p>
                             </div>
                         </div>
                     </div>
@@ -217,7 +215,7 @@
                 <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">First Time Special</span>
                 <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">公式LINE限定・初回トライアル特典</h2>
                 <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-pearl-muted mt-4">認証現役ライバーによる丁寧な施術とサロンの清潔感を、まずは特別価格でご体感ください。</p>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">「まずは試してみたい」「家計に無理のない範囲で始めたい」という方も安心の特別価格です。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -246,7 +244,7 @@
         </div>
     </section>
 
-    <!-- コンセプト＆サロン空間紹介（11234.jpg & 11236.jpg 配置） -->
+    <!-- コンセプト＆サロン空間紹介（11234.jpg 配置） -->
     <section class="py-16 md:py-22 bg-obsidian-950 bg-luxury-radial border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6" data-aos="fade-up">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-obsidian-900/90 rounded-3xl p-6 sm:p-10 border gold-border luxury-dark-shadow">
@@ -260,10 +258,10 @@
                 <div class="md:col-span-7 space-y-4">
                     <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase">Concept & Promise</span>
                     <h2 class="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-pearl leading-snug">
-                        ゴージャスな非日常と、<br class="hidden sm:inline">徹底した清潔感・安心の都度払い
+                        親としてのリアルな実感があるから、<br class="hidden sm:inline">押し付けのない心地よいサロンへ
                     </h2>
                     <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed">
-                        「エステや脱毛は高額なローンを組まされそう」「他の人と顔を合わせたくない」——そんな不安をすべて取り除いたのがLUVIAです。認証現役ライバーならではの美意識とホスピタリティで、1回ごとの都度払いのみで安心して通っていただけます。
+                        5人の子どもを育てる親だからこそ、日々のスケジュールや家計のやりくり、そして「たまには自分を整えてリフレッシュしたい」という気持ちがよく分かります。高額なコース契約や無理な勧誘は一切せず、お財布にも心にも無理のない完全都度払いで、清潔で上質なケアをご提供します。
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                         <div class="flex items-start gap-3 bg-obsidian-800/90 p-3.5 rounded-xl border gold-border">
@@ -274,10 +272,10 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3 bg-obsidian-800/90 p-3.5 rounded-xl border gold-border">
-                            <i class="fa-solid fa-sparkles text-gold-light mt-0.5"></i>
+                            <i class="fa-solid fa-heart text-gold-light mt-0.5"></i>
                             <div>
-                                <p class="text-xs font-bold text-pearl">徹底した衛生管理・完全個室</p>
-                                <p class="text-[11px] text-pearl-muted mt-0.5">施術ごとの消毒と貸切空間をご提供</p>
+                                <p class="text-xs font-bold text-pearl">5児の親ならではの目線</p>
+                                <p class="text-[11px] text-pearl-muted mt-0.5">ご家族のケアから大人の身だしなみまで</p>
                             </div>
                         </div>
                     </div>
@@ -404,7 +402,7 @@
                 <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
             </div>
 
-            <!-- 4メニュー一覧ビジュアル（11236.jpg）をメニュー導入に配置 -->
+            <!-- 4メニュー一覧ビジュアル（11236.jpg） -->
             <div class="max-w-2xl mx-auto mb-12 p-2 bg-gradient-to-br from-gold-light/40 to-obsidian-800 rounded-2xl border gold-border luxury-dark-shadow">
                 <img src="./11236.jpg" alt="LUVIA 4つのメニュー一覧" class="w-full h-auto object-cover rounded-xl">
             </div>
@@ -420,7 +418,7 @@
                             <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">脱毛・プロ専任施術</span>
                             <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">CLEAR/SP 光脱毛（都度払い）</h3>
                             <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
-                                大人からお子様、男性のヒゲ脱毛まで幅広く対応。デリケートなお肌にもやさしい最新光脱毛で、痛みを抑えながらツルスベ肌へ導きます。
+                                大人からお子様、男性のヒゲ脱毛まで幅広く対応。デリケートなお肌にもやさしい最新光脱毛で、痛みを抑えながらツルスベ肌へ導きます。5人の子どもを育てる親だからこそ、お子様の肌トラブルや通いやすさにも寄り添います。
                             </p>
 
                             <!-- 顔・腕・足の3連施術ギャラリー -->
@@ -439,14 +437,14 @@
                                 </div>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center">
-                                <span class="text-xs text-pearl-dim">キッズ脱毛OK / 親子・カップルで通える</span>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex flex-wrap justify-between items-center gap-2">
+                                <span class="text-xs text-pearl-dim">キッズ脱毛OK / 親子・ご家族で通える</span>
                                 <span class="font-serif text-base sm:text-lg font-bold text-gold-light">部位別都度払い対応</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- メンズヒゲ脱毛 Before/After バナー（11241.jpg：黒×金で完全統一） -->
+                    <!-- メンズヒゲ脱毛 Before/After バナー（11241.jpg） -->
                     <div class="mt-6 pt-6 border-t border-white/10">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="w-2 h-2 rounded-full bg-gold-light"></span>
@@ -552,7 +550,7 @@
                                     <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">パーマネントジュエリー</span>
                                     <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">INFINITY CHAIN（シームレスジュエリー）</h3>
                                     <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
-                                        留め具のない特別な溶接アクセサリー。肌身離さずずっとつながる上品な輝きは、ご自身へのご褒美や大切な方とのペアジュエリーにも人気です。
+                                        留め具のない特別な溶接アクセサリー。肌身離さずずっとつながる上品な輝きは、ご自身へのご褒美や大切な方・ご家族とのペアジュエリーにも人気です。
                                     </p>
                                     <p class="text-[11px] text-pearl-dim mt-2">定価：ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
                                 </div>
@@ -569,14 +567,14 @@
         </div>
     </section>
 
-    <!-- スタッフ紹介（認証現役プロライバー紹介） -->
+    <!-- スタッフ紹介（認証現役プロライバー紹介・NATSUMIのリアルな親目線反映） -->
     <section id="staff" class="py-16 md:py-22 bg-obsidian-900 border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-10" data-aos="fade-up">
                 <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Certified Pro Livers</span>
                 <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">認証現役ライバー・専任スタッフ紹介</h2>
                 <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-pearl-muted mt-4">人前に立つプロとして美を追求する認証現役ライバーが、丁寧なカウンセリングと確かな技術で施術いたします。</p>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">人前に立つプロとして美を追求する認証現役プロライバーが、丁寧なカウンセリングと確かな技術で施術いたします。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -590,9 +588,9 @@
                             <img src="./1791266765267.jpg?v=final" alt="NATSUMI" class="w-full h-full object-cover">
                         </div>
                         <h3 class="font-en text-2xl font-bold gold-foil-text tracking-widest">NATSUMI</h3>
-                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Liver / Esthetician</p>
+                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Pro Liver / Esthetician</p>
                         <p class="text-xs sm:text-sm text-pearl-muted mt-3 leading-relaxed">
-                            丁寧なカウンセリングでお肌の悩みに寄り添い、確かな技術を提供いたします。ライブ配信やSNSでもサロンの最新情報や美容知識を発信中。
+                            5人の子どもを育てる親だからこそ分かる、忙しい毎日や親御さんのリアルな気持ちに寄り添い、丁寧なカウンセリングと確かな技術を提供します。ライブ配信やSNSでもサロンの最新情報や美容知識を発信中。
                         </p>
                     </div>
                     <div class="mt-6 pt-4 border-t border-white/10">
@@ -612,9 +610,9 @@
                             <img src="./1791266765312.jpg?v=final" alt="YUME" class="w-full h-full object-cover">
                         </div>
                         <h3 class="font-en text-2xl font-bold gold-foil-text tracking-widest">YUME</h3>
-                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Liver / Beauty Specialist</p>
+                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Pro Liver / Beauty Specialist</p>
                         <p class="text-xs sm:text-sm text-pearl-muted mt-3 leading-relaxed">
-                            リラックスしていただける上質な空間と丁寧な施術をお届けします。初めての美容サロン通いも安心してお任せください。
+                            リラックスしていただける清潔で上質な空間と丁寧な施術をお届けします。初めての美容サロン通いも安心してお任せください。
                         </p>
                     </div>
                     <div class="mt-6 pt-4 border-t border-white/10">
@@ -678,7 +676,7 @@
                 <!-- 店内写真3枚 -->
                 <div class="lg:col-span-7 space-y-4">
                     <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed">
-                        他のお客様とすれ違うことのない完全予約制のプライベート空間です。清潔感のある白を基調とした施術ルームで、ゆったりとお過ごしいただけます。
+                        清潔感のある白を基調とした施術スペースで、ゆったりとお過ごしいただけます。
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="rounded-2xl overflow-hidden border gold-border shadow-md h-48">
@@ -688,7 +686,7 @@
                             <img src="./Datsumou.jpg" alt="清潔な施術ベッドと脱毛機" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                         </div>
                         <div class="rounded-2xl overflow-hidden border gold-border shadow-md h-52 sm:col-span-2">
-                            <img src="./Bed.jpg" alt="落ち着いたプライベート空間" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                            <img src="./Bed.jpg" alt="落ち着いた施術スペース" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
