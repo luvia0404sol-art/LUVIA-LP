@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Total Beauty Salon LUVIA（ルヴィア）｜愛知県稲沢市の完全都度払いプライベートサロン</title>
-    <meta name="description" content="愛知県稲沢市の完全予約制プライベートサロンLUVIA。自分を、もっと好きになれる場所。安心の完全都度払い制。CLEAR/SP光脱毛、セルキュア4T++、セルフホワイトニング初回980円、INFINITY CHAIN。">
-    <!-- Google Fonts: 上品な明朝体と清潔感のあるゴシック体 -->
+    <title>Total Beauty Salon LUVIA（ルヴィア）｜愛知県稲沢市の認証現役ライバー施術・完全都度払いサロン</title>
+    <meta name="description" content="愛知県稲沢市の完全予約制プライベートサロンLUVIA。認証現役ライバーが直接施術。安心の完全都度払い制。CLEAR/SP光脱毛、セルキュア4T++、セルフホワイトニング初回980円、INFINITY CHAIN。">
+    <!-- Google Fonts: 高級感のある明朝体と英字セリフ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,21 +16,22 @@
             theme: {
                 extend: {
                     colors: {
-                        ivory: {
-                            50: '#FDFCFA',
-                            100: '#FAF7F2',
-                            200: '#F3EDE2',
-                            300: '#E6DCCB',
+                        obsidian: {
+                            950: '#070709',
+                            900: '#0D0D10',
+                            800: '#15151A',
+                            700: '#1F1F26',
                         },
-                        champagne: {
-                            light: '#DFC588',
-                            DEFAULT: '#B8963E',
-                            dark: '#8E7024',
+                        gold: {
+                            pale: '#F3E5AB',
+                            light: '#E5C76B',
+                            DEFAULT: '#C8A349',
+                            dark: '#967426',
                         },
-                        charcoal: {
-                            DEFAULT: '#2C2520',
-                            light: '#5A5048',
-                            muted: '#8A7F76',
+                        pearl: {
+                            DEFAULT: '#F5F3EE',
+                            muted: '#B5B0A6',
+                            dim: '#7D7870',
                         }
                     },
                     fontFamily: {
@@ -49,98 +50,117 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body {
-            background-color: #FAF7F2;
-            color: #2C2520;
+            background-color: #070709;
+            color: #F5F3EE;
         }
-        .gold-text {
-            background: linear-gradient(135deg, #C9A857 0%, #9E7B27 55%, #C9A857 100%);
+        /* 上品なシャンパンゴールドの箔押しグラデーション */
+        .gold-foil-text {
+            background: linear-gradient(135deg, #F7E8B5 0%, #D4AF37 45%, #F3E5AB 70%, #AA7C11 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .gold-border-subtle {
-            border-color: rgba(184, 150, 62, 0.35);
+        .gold-foil-bg {
+            background: linear-gradient(135deg, #E5C76B 0%, #C8A349 50%, #9E7B27 100%);
         }
-        .luxury-shadow {
-            box-shadow: 0 15px 40px -10px rgba(44, 37, 32, 0.08);
+        .gold-border {
+            border-color: rgba(200, 163, 73, 0.35);
+        }
+        .gold-border-strong {
+            border-color: rgba(229, 199, 107, 0.65);
+        }
+        .luxury-dark-shadow {
+            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.85), 0 0 25px rgba(200, 163, 73, 0.08);
+        }
+        .gold-glow-subtle {
+            box-shadow: 0 0 35px rgba(200, 163, 73, 0.16);
         }
         .btn-line-luxury {
-            background: linear-gradient(135deg, #06C755 0%, #05a847 100%);
-            box-shadow: 0 10px 25px -5px rgba(6, 199, 85, 0.35);
+            background: linear-gradient(135deg, #06C755 0%, #049E43 100%);
+            box-shadow: 0 10px 30px -5px rgba(6, 199, 85, 0.4);
             transition: all 0.3s ease;
         }
         .btn-line-luxury:hover {
             transform: translateY(-2px);
-            box-shadow: 0 14px 30px -5px rgba(6, 199, 85, 0.45);
+            box-shadow: 0 14px 35px -5px rgba(6, 199, 85, 0.55);
         }
         .btn-gold-outline {
-            border: 1px solid #B8963E;
-            color: #8E7024;
+            border: 1px solid rgba(200, 163, 73, 0.6);
+            color: #E5C76B;
             transition: all 0.3s ease;
         }
         .btn-gold-outline:hover {
-            background-color: #B8963E;
-            color: #FFFFFF;
+            background: linear-gradient(135deg, #E5C76B 0%, #C8A349 100%);
+            color: #070709;
+            border-color: transparent;
+        }
+        /* 微細な大理石・シルク風の背景テクスチャ感 */
+        .bg-luxury-radial {
+            background-image: radial-gradient(circle at 80% 20%, rgba(200, 163, 73, 0.11) 0%, transparent 45%),
+                              radial-gradient(circle at 15% 80%, rgba(200, 163, 73, 0.07) 0%, transparent 45%);
         }
     </style>
 </head>
-<body class="font-sans antialiased selection:bg-champagne selection:text-white">
+<body class="font-sans antialiased selection:bg-gold selection:text-obsidian-950">
 
-    <!-- ヘッダー（清潔感のある半透明アイボリー） -->
-    <header class="fixed top-0 left-0 w-full bg-ivory-50/90 backdrop-blur-md z-50 border-b border-ivory-300/70">
+    <!-- ヘッダー（漆黒ガラス×シャンパンゴールド） -->
+    <header class="fixed top-0 left-0 w-full bg-obsidian-950/90 backdrop-blur-md z-50 border-b gold-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
             <a href="#" class="flex flex-col">
-                <span class="text-2xl md:text-3xl font-en font-semibold tracking-[0.22em] text-charcoal leading-none">LUVIA</span>
-                <span class="text-[9px] tracking-[0.18em] text-champagne-dark mt-0.5 uppercase">Total Beauty Salon</span>
+                <span class="text-2xl md:text-3xl font-en font-bold tracking-[0.25em] gold-foil-text leading-none">LUVIA</span>
+                <span class="text-[9px] tracking-[0.2em] text-pearl-muted mt-0.5 uppercase">Total Beauty Salon</span>
             </a>
-            <nav class="flex items-center space-x-4 md:space-x-7 text-xs md:text-sm font-medium text-charcoal-light">
-                <a href="#campaign" class="hover:text-champagne-dark transition">初回特典</a>
-                <a href="#price" class="hover:text-champagne-dark transition">料金表</a>
-                <a href="#menu" class="hover:text-champagne-dark transition">施術内容</a>
-                <a href="#staff" class="hidden sm:inline hover:text-champagne-dark transition">スタッフ</a>
-                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="bg-charcoal text-ivory-50 text-xs px-4 py-2 rounded-full hover:bg-champagne-dark transition tracking-wider">
+            <nav class="flex items-center space-x-4 md:space-x-7 text-xs md:text-sm font-medium text-pearl-muted">
+                <a href="#campaign" class="hover:text-gold-light transition">初回特典</a>
+                <a href="#price" class="hover:text-gold-light transition">料金表</a>
+                <a href="#menu" class="hover:text-gold-light transition">施術内容</a>
+                <a href="#staff" class="hidden sm:inline hover:text-gold-light transition">認証ライバー</a>
+                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="gold-foil-bg text-obsidian-950 font-bold text-xs px-4 py-2 rounded-full hover:opacity-90 transition tracking-wider shadow-md">
                     LINE予約
                 </a>
             </nav>
         </div>
     </header>
 
-    <!-- ファーストビュー（FV）：雑誌・ホテルスパ風の清潔感×ゴージャス設計 -->
-    <section class="relative pt-24 pb-14 md:pt-32 md:pb-24 bg-gradient-to-b from-ivory-50 via-ivory-100 to-ivory-200/60 overflow-hidden">
-        <!-- 背景の繊細な装飾光 -->
-        <div class="absolute top-20 right-0 w-96 h-96 bg-champagne/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-ivory-300/40 rounded-full blur-3xl pointer-events-none"></div>
-
+    <!-- ファーストビュー（FV）：黒金ゴージャス × 認証現役ライバー施術インパクト設計 -->
+    <section class="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-obsidian-950 bg-luxury-radial overflow-hidden border-b gold-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <!-- 左カラム：コピー＆LINE誘導 -->
+                <!-- 左カラム：認証現役ライバー訴求＆ブランドコピー＆LINE誘導 -->
                 <div class="lg:col-span-6 text-center lg:text-left order-2 lg:order-1" data-aos="fade-up" data-aos-duration="900">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border gold-border-subtle text-champagne-dark text-xs tracking-widest mb-5 shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
-                        愛知県稲沢市｜完全予約制プライベートサロン
+                    
+                    <!-- 最重要アイキャッチ：認証現役ライバー施術バッジ -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-obsidian-800 border gold-border-strong shadow-lg mb-5">
+                        <i class="fa-solid fa-certificate text-gold-light text-sm"></i>
+                        <span class="text-xs sm:text-sm font-serif font-semibold tracking-widest gold-foil-text">
+                            公式認証・現役プロライバーが直接施術
+                        </span>
                     </div>
 
-                    <p class="font-serif text-base md:text-lg tracking-[0.2em] text-champagne-dark mb-2">
-                        自分を、もっと好きになれる場所。
+                    <p class="font-serif text-sm sm:text-base md:text-lg tracking-[0.22em] text-gold-pale/90 mb-2">
+                        愛知県稲沢市｜完全予約制プライベートサロン
                     </p>
 
-                    <h1 class="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-[1.45] text-charcoal mb-5">
-                        高額コース・勧誘は<span class="gold-text font-bold">一切なし。</span><br>
-                        大人のための<span class="border-b-2 border-champagne pb-1">完全都度払い</span>サロン
+                    <h1 class="font-serif text-2xl sm:text-3xl md:text-[38px] font-bold leading-[1.42] text-pearl mb-5">
+                        <span class="gold-foil-text">認証現役ライバー</span>が手がける、<br>
+                        美意識を磨く<span class="border-b border-gold-light pb-1">完全都度払い</span>サロン
                     </h1>
 
-                    <p class="text-xs sm:text-sm text-charcoal-light leading-relaxed mb-7 max-w-xl mx-auto lg:mx-0">
-                        人目を気にせず過ごせる1組様限定のプライベート空間。<br class="hidden sm:inline">
-                        最新光脱毛・セルキュア4T++・ホワイトニング・シームレスジュエリーまで、通いたい時に通いたい分だけ上質なケアをご提供します。
+                    <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed mb-7 max-w-xl mx-auto lg:mx-0">
+                        人前に立つプロとして「魅せる美」を追求し続ける認証現役ライバーが、丁寧なカウンセリングと確かな技術であなたをプロデュース。<br class="hidden sm:inline">
+                        高額ローン・回数券勧誘は一切なし。1組様限定の清潔な個室空間でお迎えします。
                     </p>
 
-                    <!-- 上質なLINE予約カード（AI感・煽り感を排除した洗練デザイン） -->
-                    <div class="bg-white/95 border gold-border-subtle rounded-2xl p-5 sm:p-6 luxury-shadow max-w-lg mx-auto lg:mx-0">
-                        <div class="flex items-center justify-between border-b border-ivory-200 pb-3 mb-4">
-                            <span class="text-xs font-serif font-semibold tracking-wider text-charcoal">
-                                <i class="fa-solid fa-crown text-champagne mr-1.5"></i>公式LINE限定 特別ご優待枠
+                    <!-- 黒×金ラグジュアリーLINE予約カード -->
+                    <div class="bg-obsidian-900/95 border gold-border-strong rounded-2xl p-5 sm:p-6 luxury-dark-shadow max-w-lg mx-auto lg:mx-0 relative overflow-hidden">
+                        <!-- 上部ゴールドアクセントライン -->
+                        <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
+
+                        <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+                            <span class="text-xs font-serif font-semibold tracking-wider text-gold-light">
+                                <i class="fa-solid fa-crown text-gold mr-1.5"></i>公式LINE限定 特別ご優待枠
                             </span>
-                            <span class="text-[11px] text-champagne-dark bg-ivory-100 px-2.5 py-0.5 rounded-full border border-ivory-300">
+                            <span class="text-[11px] text-gold-pale bg-obsidian-800 px-2.5 py-0.5 rounded-full border gold-border">
                                 2回目以降も会員価格
                             </span>
                         </div>
@@ -148,38 +168,39 @@
                         <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer"
                            class="btn-line-luxury flex items-center justify-center gap-3 w-full py-4 px-5 text-white font-bold text-sm sm:text-base rounded-xl tracking-wide">
                             <i class="fa-brands fa-line text-2xl"></i>
-                            <span>公式LINEで空き状況・特別枠を予約する</span>
+                            <span>公式LINEで空き状況・施術枠を予約する</span>
                         </a>
 
-                        <div class="mt-3.5 flex flex-wrap items-center justify-center lg:justify-between gap-2 text-xs text-charcoal-light">
-                            <span><i class="fa-solid fa-check text-champagne mr-1"></i>ホワイトニング初回 <strong class="text-charcoal font-bold">980円</strong></span>
-                            <span><i class="fa-solid fa-check text-champagne mr-1"></i>全身脱毛初回 <strong class="text-charcoal font-bold">9,800円</strong></span>
+                        <div class="mt-3.5 flex flex-wrap items-center justify-center lg:justify-between gap-2 text-xs text-pearl-muted">
+                            <span><i class="fa-solid fa-check text-gold-light mr-1"></i>ホワイトニング初回 <strong class="text-gold-pale font-bold">980円</strong></span>
+                            <span><i class="fa-solid fa-check text-gold-light mr-1"></i>全身脱毛初回 <strong class="text-gold-pale font-bold">9,800円</strong></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 右カラム：4メニュー一覧ビジュアル（11236.jpg）を額縁のように美しく配置 -->
+                <!-- 右カラム：認証現役プロライバー所属＆4メニュービジュアル（11235.jpg）を主役配置 -->
                 <div class="lg:col-span-6 order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000">
                     <div class="relative max-w-lg mx-auto">
-                        <!-- 外枠のゴールドフレーム装飾 -->
-                        <div class="p-2 sm:p-3 bg-white rounded-2xl border gold-border-subtle luxury-shadow">
-                            <div class="rounded-xl overflow-hidden">
-                                <img src="./11236.jpg" alt="LUVIA 脱毛・セルフホワイトニング・セルキュア4T++・INFINITY CHAIN" class="w-full h-auto object-cover">
+                        <!-- ゴールド二重額縁フレーム -->
+                        <div class="p-2 sm:p-3 bg-gradient-to-br from-gold-light/40 via-obsidian-800 to-gold-dark/40 rounded-2xl border gold-border-strong luxury-dark-shadow">
+                            <div class="rounded-xl overflow-hidden bg-pearl relative">
+                                <img src="./11235.jpg" alt="LUVIA 認証現役プロライバー所属・脱毛・セルフホワイトニング・セルキュア4T++・INFINITY CHAIN" class="w-full h-auto object-cover">
                             </div>
                         </div>
-                        <!-- サロン特徴のミニバッジ -->
-                        <div class="grid grid-cols-3 gap-2 mt-3 text-center">
-                            <div class="bg-white/90 border border-ivory-300 rounded-xl py-2.5 px-2 shadow-sm">
-                                <p class="text-[10px] text-champagne-dark font-en tracking-widest uppercase">Private</p>
-                                <p class="text-xs font-serif font-semibold text-charcoal mt-0.5">完全予約制</p>
+
+                        <!-- 信頼性・清潔感を示す3つのゴールドプレート -->
+                        <div class="grid grid-cols-3 gap-2.5 mt-3.5 text-center">
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
+                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Certified Liver</p>
+                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">認証ライバー施術</p>
                             </div>
-                            <div class="bg-white/90 border border-ivory-300 rounded-xl py-2.5 px-2 shadow-sm">
-                                <p class="text-[10px] text-champagne-dark font-en tracking-widest uppercase">Pay Per Visit</p>
-                                <p class="text-xs font-serif font-semibold text-charcoal mt-0.5">安心の都度払い</p>
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
+                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Pay Per Visit</p>
+                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">完全都度払い制</p>
                             </div>
-                            <div class="bg-white/90 border border-ivory-300 rounded-xl py-2.5 px-2 shadow-sm">
-                                <p class="text-[10px] text-champagne-dark font-en tracking-widest uppercase">Parking</p>
-                                <p class="text-xs font-serif font-semibold text-charcoal mt-0.5">駐車場完備</p>
+                            <div class="bg-obsidian-900/90 border gold-border rounded-xl py-2.5 px-2 shadow-md">
+                                <p class="text-[10px] text-gold-light font-en tracking-widest uppercase">Private Room</p>
+                                <p class="text-xs font-serif font-semibold text-pearl mt-0.5">完全予約・個室</p>
                             </div>
                         </div>
                     </div>
@@ -189,72 +210,74 @@
         </div>
     </section>
 
-    <!-- 新設：初回限定トライアル＆キャンペーンバナー（11238.jpg & 11240.jpg） -->
-    <section id="campaign" class="py-16 md:py-20 bg-white border-y border-ivory-300/70">
+    <!-- 初回限定トライアル＆キャンペーンバナー（11238.jpg & 11240.jpg） -->
+    <section id="campaign" class="py-16 md:py-22 bg-obsidian-900 border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6" data-aos="fade-up">
             <div class="text-center mb-10">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">First Time Special</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">公式LINE限定・初回トライアル特典</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-charcoal-light mt-4">まずは気軽にサロンの技術と清潔感をご体感いただくための特別プランです。</p>
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">First Time Special</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">公式LINE限定・初回トライアル特典</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">認証現役ライバーによる丁寧な施術とサロンの清潔感を、まずは特別価格でご体感ください。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <!-- バナー1：全身脱毛 初回9,800円（11238.jpg） -->
-                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="group block bg-ivory-50 rounded-2xl p-2.5 border gold-border-subtle luxury-shadow hover:-translate-y-1 transition duration-300">
+                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="group block bg-obsidian-800 rounded-2xl p-2.5 border gold-border-strong luxury-dark-shadow hover:-translate-y-1 transition duration-300">
                     <div class="rounded-xl overflow-hidden">
                         <img src="./11238.jpg" alt="LUVIA 全身脱毛（顔・VIO込み）初回9,800円" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-500">
                     </div>
-                    <div class="pt-3 pb-1 px-2 flex items-center justify-between text-xs">
-                        <span class="text-charcoal-light">CLEAR/SP 最新光脱毛トライアル</span>
-                        <span class="text-champagne-dark font-bold group-hover:translate-x-1 transition">LINEで予約する <i class="fa-solid fa-chevron-right ml-1"></i></span>
+                    <div class="pt-3.5 pb-1.5 px-3 flex items-center justify-between text-xs">
+                        <span class="text-pearl-muted">CLEAR/SP 最新光脱毛トライアル</span>
+                        <span class="text-gold-light font-bold group-hover:translate-x-1 transition">LINEで予約する <i class="fa-solid fa-chevron-right ml-1"></i></span>
                     </div>
                 </a>
 
                 <!-- バナー2：セルフホワイトニング 初回980円（11240.jpg） -->
-                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="group block bg-ivory-50 rounded-2xl p-2.5 border gold-border-subtle luxury-shadow hover:-translate-y-1 transition duration-300">
+                <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="group block bg-obsidian-800 rounded-2xl p-2.5 border gold-border-strong luxury-dark-shadow hover:-translate-y-1 transition duration-300">
                     <div class="rounded-xl overflow-hidden">
                         <img src="./11240.jpg" alt="LUVIA セルフホワイトニング 初回980円" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-500">
                     </div>
-                    <div class="pt-3 pb-1 px-2 flex items-center justify-between text-xs">
-                        <span class="text-charcoal-light">お友だち追加クーポン適用価格</span>
-                        <span class="text-champagne-dark font-bold group-hover:translate-x-1 transition">LINEでクーポン受取 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+                    <div class="pt-3.5 pb-1.5 px-3 flex items-center justify-between text-xs">
+                        <span class="text-pearl-muted">お友だち追加クーポン適用価格</span>
+                        <span class="text-gold-light font-bold group-hover:translate-x-1 transition">LINEでクーポン受取 <i class="fa-solid fa-chevron-right ml-1"></i></span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- コンセプト＆サロン空間紹介（11234.jpg 配置） -->
-    <section class="py-16 md:py-20 bg-ivory-100">
+    <!-- コンセプト＆サロン空間紹介（11234.jpg & 11236.jpg 配置） -->
+    <section class="py-16 md:py-22 bg-obsidian-950 bg-luxury-radial border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6" data-aos="fade-up">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-10 border border-ivory-300 luxury-shadow">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-obsidian-900/90 rounded-3xl p-6 sm:p-10 border gold-border luxury-dark-shadow">
                 <div class="md:col-span-5">
-                    <div class="rounded-2xl overflow-hidden border border-ivory-200 shadow-sm">
-                        <img src="./11234.jpg" alt="LUVIA 清潔感あふれるサロン空間とメニュー" class="w-full h-auto object-cover">
+                    <div class="p-1.5 rounded-2xl bg-gradient-to-br from-gold-light/40 to-obsidian-800 border gold-border">
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="./11234.jpg" alt="LUVIA 清潔感あふれるサロン空間とメニュー" class="w-full h-auto object-cover">
+                        </div>
                     </div>
                 </div>
                 <div class="md:col-span-7 space-y-4">
-                    <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase">Concept & Promise</span>
-                    <h2 class="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-charcoal leading-snug">
-                        通いやすさと上質な空間を両立した、<br class="hidden sm:inline">稲沢市の隠れ家プライベートサロン
+                    <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase">Concept & Promise</span>
+                    <h2 class="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-pearl leading-snug">
+                        ゴージャスな非日常と、<br class="hidden sm:inline">徹底した清潔感・安心の都度払い
                     </h2>
-                    <p class="text-xs sm:text-sm text-charcoal-light leading-relaxed">
-                        「エステや脱毛は高額なローンを組まされそう」「他の人と顔を合わせたくない」——そんな不安をすべて取り除いたのがLUVIAです。白とナチュラルウッドを基調とした清潔な空間で、1回ごとの都度払いのみで安心して通っていただけます。
+                    <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed">
+                        「エステや脱毛は高額なローンを組まされそう」「他の人と顔を合わせたくない」——そんな不安をすべて取り除いたのがLUVIAです。認証現役ライバーならではの美意識とホスピタリティで、1回ごとの都度払いのみで安心して通っていただけます。
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                        <div class="flex items-start gap-2.5 bg-ivory-50 p-3 rounded-xl border border-ivory-200">
-                            <i class="fa-solid fa-shield-heart text-champagne mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-obsidian-800/90 p-3.5 rounded-xl border gold-border">
+                            <i class="fa-solid fa-shield-halved text-gold-light mt-0.5"></i>
                             <div>
-                                <p class="text-xs font-bold text-charcoal">完全都度払い・勧誘ゼロ</p>
-                                <p class="text-[11px] text-charcoal-light mt-0.5">必要な時に必要な分だけお支払い</p>
+                                <p class="text-xs font-bold text-pearl">完全都度払い・勧誘ゼロ</p>
+                                <p class="text-[11px] text-pearl-muted mt-0.5">必要な時に必要な分だけお支払い</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-2.5 bg-ivory-50 p-3 rounded-xl border border-ivory-200">
-                            <i class="fa-solid fa-sparkles text-champagne mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-obsidian-800/90 p-3.5 rounded-xl border gold-border">
+                            <i class="fa-solid fa-sparkles text-gold-light mt-0.5"></i>
                             <div>
-                                <p class="text-xs font-bold text-charcoal">徹底した衛生管理・完全個室</p>
-                                <p class="text-[11px] text-charcoal-light mt-0.5">施術ごとの消毒と貸切空間をご提供</p>
+                                <p class="text-xs font-bold text-pearl">徹底した衛生管理・完全個室</p>
+                                <p class="text-[11px] text-pearl-muted mt-0.5">施術ごとの消毒と貸切空間をご提供</p>
                             </div>
                         </div>
                     </div>
@@ -263,102 +286,102 @@
         </div>
     </section>
 
-    <!-- LINE予約限定 特別プライスリスト（清潔感のある白×ゴールドテーブル） -->
-    <section id="price" class="py-16 md:py-20 bg-white border-t border-ivory-300/70" data-aos="fade-up">
+    <!-- LINE予約限定 特別プライスリスト（黒×シャンパンゴールド仕様） -->
+    <section id="price" class="py-16 md:py-22 bg-obsidian-900 border-b gold-border" data-aos="fade-up">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-10">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">LINE Members Price</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">LINE予約限定・特別プライスリスト</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-charcoal-light mt-4">公式LINEからご予約いただいた方限定の会員優待価格です（すべて税込・都度払い）。</p>
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">LINE Members Price</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">LINE予約限定・特別プライスリスト</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">公式LINEからご予約いただいた方限定の会員優待価格です（すべて税込・都度払い）。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- 光脱毛 (CLEAR/SP) -->
-                <div class="border gold-border-subtle rounded-2xl p-6 bg-ivory-50/70 luxury-shadow relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-champagne-light via-champagne to-champagne-dark"></div>
-                    <h3 class="font-serif text-lg font-bold border-b border-ivory-300 pb-3 mb-4 text-charcoal flex justify-between items-center">
+                <div class="border gold-border-strong rounded-2xl p-6 bg-obsidian-950/90 luxury-dark-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
+                    <h3 class="font-serif text-lg font-bold border-b border-white/10 pb-3 mb-4 text-gold-pale flex justify-between items-center">
                         <span>光脱毛 (CLEAR/SP)</span>
-                        <span class="text-[11px] text-champagne-dark font-sans font-normal bg-white px-2.5 py-0.5 rounded-full border border-ivory-300">完全都度払い</span>
+                        <span class="text-[11px] text-gold-light font-sans font-normal bg-obsidian-800 px-2.5 py-0.5 rounded-full border gold-border">完全都度払い</span>
                     </h3>
                     <div class="space-y-4 text-sm">
-                        <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
                             <div>
-                                <span class="font-bold text-charcoal">レディース全身</span>
-                                <span class="block text-[11px] text-charcoal-muted">（顔・VIO込み）</span>
+                                <span class="font-bold text-pearl">レディース全身</span>
+                                <span class="block text-[11px] text-pearl-dim">（顔・VIO込み）</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥18,000</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥11,000</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥18,000</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥11,000</span>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
                             <div>
-                                <span class="font-bold text-charcoal">メンズ全身</span>
-                                <span class="block text-[11px] text-charcoal-muted">（顔・VIO込み）</span>
+                                <span class="font-bold text-pearl">メンズ全身</span>
+                                <span class="block text-[11px] text-pearl-dim">（顔・VIO込み）</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥25,000</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥19,800</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥25,000</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥19,800</span>
                             </div>
                         </div>
                         <div class="flex justify-between items-center pt-1">
                             <div>
-                                <span class="font-bold text-charcoal">キッズ全身</span>
-                                <span class="block text-[11px] text-charcoal-muted">（顔・VIOなし）</span>
+                                <span class="font-bold text-pearl">キッズ全身</span>
+                                <span class="block text-[11px] text-pearl-dim">（顔・VIOなし）</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥10,000</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥6,980</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥10,000</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥6,980</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- フェイシャル (セルキュア4T++) -->
-                <div class="border gold-border-subtle rounded-2xl p-6 bg-ivory-50/70 luxury-shadow relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-champagne-light via-champagne to-champagne-dark"></div>
-                    <h3 class="font-serif text-lg font-bold border-b border-ivory-300 pb-3 mb-4 text-charcoal flex justify-between items-center">
+                <div class="border gold-border-strong rounded-2xl p-6 bg-obsidian-950/90 luxury-dark-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
+                    <h3 class="font-serif text-lg font-bold border-b border-white/10 pb-3 mb-4 text-gold-pale flex justify-between items-center">
                         <span>フェイシャル (セルキュア4T++)</span>
-                        <span class="text-[11px] text-champagne-dark font-sans font-normal bg-white px-2.5 py-0.5 rounded-full border border-ivory-300">税込</span>
+                        <span class="text-[11px] text-gold-light font-sans font-normal bg-obsidian-800 px-2.5 py-0.5 rounded-full border gold-border">税込</span>
                     </h3>
                     <div class="space-y-4 text-sm">
-                        <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
                             <div>
-                                <span class="font-bold text-charcoal">フェイシャル</span>
-                                <span class="block text-[11px] text-charcoal-muted">デコルテマッサージ含む</span>
+                                <span class="font-bold text-pearl">フェイシャル</span>
+                                <span class="block text-[11px] text-pearl-dim">デコルテマッサージ含む</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥12,000</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥8,980</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥12,000</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥8,980</span>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
                             <div>
-                                <span class="font-bold text-charcoal">ヘッドスパ</span>
-                                <span class="block text-[11px] text-charcoal-muted">頭皮クレンジング〜活性化</span>
+                                <span class="font-bold text-pearl">ヘッドスパ</span>
+                                <span class="block text-[11px] text-pearl-dim">頭皮クレンジング〜活性化</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥12,000</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥6,980</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥12,000</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥6,980</span>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
                             <div>
-                                <span class="font-bold text-charcoal">ヘッドスパ付フェイシャル</span>
-                                <span class="block text-[11px] text-charcoal-muted">お顔と頭皮の極上Wケア</span>
+                                <span class="font-bold text-pearl">ヘッドスパ付フェイシャル</span>
+                                <span class="block text-[11px] text-pearl-dim">お顔と頭皮の極上Wケア</span>
                             </div>
                             <div class="text-right">
-                                <span class="block text-[11px] text-charcoal-muted line-through">定価 ¥13,500</span>
-                                <span class="font-serif font-bold text-champagne-dark text-lg"><span class="text-[10px] font-sans font-medium mr-1">LINE会員</span>¥10,500</span>
+                                <span class="block text-[11px] text-pearl-dim line-through">定価 ¥13,500</span>
+                                <span class="font-serif font-bold gold-foil-text text-xl"><span class="text-[10px] font-sans font-medium text-gold-light mr-1">LINE会員</span>¥10,500</span>
                             </div>
                         </div>
-                        <div class="bg-white p-3.5 rounded-xl border border-champagne/40 flex justify-between items-center">
+                        <div class="bg-obsidian-800 p-3.5 rounded-xl border gold-border-strong flex justify-between items-center">
                             <div>
-                                <span class="text-[11px] text-champagne-dark font-bold block">★ 時短＆小顔セット割</span>
-                                <span class="text-xs font-medium text-charcoal">光脱毛と同時施術ならずっと</span>
+                                <span class="text-[11px] text-gold-light font-bold block">★ 時短＆小顔セット割</span>
+                                <span class="text-xs font-medium text-pearl">光脱毛と同時施術ならずっと</span>
                             </div>
-                            <span class="font-serif font-bold text-champagne-dark text-lg">¥6,980</span>
+                            <span class="font-serif font-bold gold-foil-text text-xl">¥6,980</span>
                         </div>
                     </div>
                 </div>
@@ -373,70 +396,75 @@
     </section>
 
     <!-- サービスメニュー詳細 -->
-    <section id="menu" class="py-16 md:py-20 bg-ivory-100 border-t border-ivory-300/70">
+    <section id="menu" class="py-16 md:py-22 bg-obsidian-950 bg-luxury-radial border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6" data-aos="fade-up">
-            <div class="text-center mb-12">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">Service Menu</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">4つのプロフェッショナルメニュー</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
+            <div class="text-center mb-10">
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Service Menu</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">4つのプロフェッショナルメニュー</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
+            </div>
+
+            <!-- 4メニュー一覧ビジュアル（11236.jpg）をメニュー導入に配置 -->
+            <div class="max-w-2xl mx-auto mb-12 p-2 bg-gradient-to-br from-gold-light/40 to-obsidian-800 rounded-2xl border gold-border luxury-dark-shadow">
+                <img src="./11236.jpg" alt="LUVIA 4つのメニュー一覧" class="w-full h-auto object-cover rounded-xl">
             </div>
 
             <div class="space-y-8">
                 <!-- 1. CLEAR/SP 光脱毛 -->
-                <div class="bg-white border border-ivory-300 rounded-3xl p-6 md:p-8 luxury-shadow" data-aos="fade-up">
+                <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-8 luxury-dark-shadow" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-                        <div class="w-full md:w-1/3 bg-ivory-50 rounded-2xl p-3 border border-ivory-200 flex items-center justify-center overflow-hidden">
+                        <div class="w-full md:w-1/3 bg-obsidian-950 rounded-2xl p-3 border gold-border flex items-center justify-center overflow-hidden">
                             <img src="./clear-sp.jpg?v=final" alt="CLEAR/SP 脱毛機" class="max-h-52 w-full object-contain rounded-xl">
                         </div>
                         <div class="w-full md:w-2/3">
-                            <span class="bg-ivory-100 text-champagne-dark text-xs font-bold px-3 py-1 rounded-full border border-ivory-300">脱毛・プロ専任施術</span>
-                            <h3 class="font-serif text-xl md:text-2xl font-bold text-charcoal mt-2.5">CLEAR/SP 光脱毛（都度払い）</h3>
-                            <p class="text-xs sm:text-sm text-charcoal-light mt-2 leading-relaxed">
+                            <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">脱毛・プロ専任施術</span>
+                            <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">CLEAR/SP 光脱毛（都度払い）</h3>
+                            <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
                                 大人からお子様、男性のヒゲ脱毛まで幅広く対応。デリケートなお肌にもやさしい最新光脱毛で、痛みを抑えながらツルスベ肌へ導きます。
                             </p>
 
                             <!-- 顔・腕・足の3連施術ギャラリー -->
                             <div class="grid grid-cols-3 gap-2.5 sm:gap-3 mt-4">
-                                <div class="relative group rounded-xl overflow-hidden border border-ivory-300">
+                                <div class="relative group rounded-xl overflow-hidden border gold-border">
                                     <img src="./Kao.jpg" alt="お顔の脱毛施術" class="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition duration-300">
-                                    <div class="absolute bottom-0 left-0 w-full bg-charcoal/70 backdrop-blur-xs text-center text-[11px] text-white py-1">お顔</div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-obsidian-950/80 backdrop-blur-xs text-center text-[11px] text-gold-pale py-1">お顔</div>
                                 </div>
-                                <div class="relative group rounded-xl overflow-hidden border border-ivory-300">
+                                <div class="relative group rounded-xl overflow-hidden border gold-border">
                                     <img src="./Ude.jpg" alt="腕の脱毛施術" class="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition duration-300">
-                                    <div class="absolute bottom-0 left-0 w-full bg-charcoal/70 backdrop-blur-xs text-center text-[11px] text-white py-1">腕</div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-obsidian-950/80 backdrop-blur-xs text-center text-[11px] text-gold-pale py-1">腕</div>
                                 </div>
-                                <div class="relative group rounded-xl overflow-hidden border border-ivory-300">
+                                <div class="relative group rounded-xl overflow-hidden border gold-border">
                                     <img src="./Ashi.jpg" alt="足の脱毛施術" class="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition duration-300">
-                                    <div class="absolute bottom-0 left-0 w-full bg-charcoal/70 backdrop-blur-xs text-center text-[11px] text-white py-1">足</div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-obsidian-950/80 backdrop-blur-xs text-center text-[11px] text-gold-pale py-1">足</div>
                                 </div>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-ivory-200 flex justify-between items-center">
-                                <span class="text-xs text-charcoal-muted">キッズ脱毛OK / 親子・カップルで通える</span>
-                                <span class="font-serif text-base sm:text-lg font-bold text-champagne-dark">部位別都度払い対応</span>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center">
+                                <span class="text-xs text-pearl-dim">キッズ脱毛OK / 親子・カップルで通える</span>
+                                <span class="font-serif text-base sm:text-lg font-bold text-gold-light">部位別都度払い対応</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- メンズヒゲ脱毛 Before/After バナー（11241.jpg） -->
-                    <div class="mt-6 pt-6 border-t border-ivory-200">
+                    <!-- メンズヒゲ脱毛 Before/After バナー（11241.jpg：黒×金で完全統一） -->
+                    <div class="mt-6 pt-6 border-t border-white/10">
                         <div class="flex items-center gap-2 mb-3">
-                            <span class="w-2 h-2 rounded-full bg-champagne"></span>
-                            <h4 class="text-sm font-bold text-charcoal">メンズヒゲ脱毛も人気（施術症例・ビフォーアフター）</h4>
+                            <span class="w-2 h-2 rounded-full bg-gold-light"></span>
+                            <h4 class="text-sm font-bold text-gold-pale">メンズヒゲ脱毛も人気（施術症例・ビフォーアフター）</h4>
                         </div>
-                        <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden border gold-border-subtle shadow-md">
+                        <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden border gold-border-strong gold-glow-subtle">
                             <img src="./11241.jpg" alt="LUVIA メンズヒゲ脱毛 Before/After" class="w-full h-auto object-cover">
                         </div>
                     </div>
 
-                    <!-- 脱毛ガイド2種（折りたたみではなく見やすく2カラム並置） -->
-                    <div class="mt-6 pt-6 border-t border-ivory-200 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 脱毛ガイド2種 -->
+                    <div class="mt-6 pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <div class="flex items-center gap-2 mb-2.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
-                                <h4 class="text-xs sm:text-sm font-bold text-charcoal">【光脱毛の仕組み】毛周期・通う目安</h4>
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-light"></span>
+                                <h4 class="text-xs sm:text-sm font-bold text-gold-pale">【光脱毛の仕組み】毛周期・通う目安</h4>
                             </div>
-                            <div class="rounded-xl overflow-hidden border border-ivory-300 shadow-sm">
+                            <div class="rounded-xl overflow-hidden border gold-border shadow-md">
                                 <a href="./hair-removal-guide.jpg?v=final" target="_blank" class="block group">
                                     <img src="./hair-removal-guide.jpg?v=final" alt="光脱毛ってなんですか？" class="w-full h-auto object-cover group-hover:opacity-90 transition">
                                 </a>
@@ -444,10 +472,10 @@
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
-                                <h4 class="text-xs sm:text-sm font-bold text-charcoal">【ご来店前のお願い】3つの正しい自己処理</h4>
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-light"></span>
+                                <h4 class="text-xs sm:text-sm font-bold text-gold-pale">【ご来店前のお願い】3つの正しい自己処理</h4>
                             </div>
-                            <div class="rounded-xl overflow-hidden border border-ivory-300 shadow-sm">
+                            <div class="rounded-xl overflow-hidden border gold-border shadow-md">
                                 <a href="./self-care.jpg?v=final" target="_blank" class="block group">
                                     <img src="./self-care.jpg?v=final" alt="3つの正しい自己処理" class="w-full h-auto object-cover group-hover:opacity-90 transition">
                                 </a>
@@ -457,24 +485,24 @@
                 </div>
 
                 <!-- 2. セルフホワイトニング -->
-                <div class="bg-white border border-ivory-300 rounded-3xl p-6 md:p-8 luxury-shadow" data-aos="fade-up">
+                <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-8 luxury-dark-shadow" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-                        <div class="w-full md:w-1/3 bg-ivory-50 rounded-2xl p-2 border border-ivory-200 overflow-hidden">
+                        <div class="w-full md:w-1/3 bg-obsidian-950 rounded-2xl p-2 border gold-border overflow-hidden">
                             <img src="./White.jpg" alt="セルフホワイトニング専用チェア" class="h-52 w-full object-cover rounded-xl hover:scale-105 transition duration-500">
                         </div>
                         <div class="w-full md:w-2/3">
                             <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                                 <div>
-                                    <span class="bg-ivory-100 text-champagne-dark text-xs font-bold px-3 py-1 rounded-full border border-ivory-300">歯の美肌ケア</span>
-                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-charcoal mt-2.5">セルフホワイトニング</h3>
-                                    <p class="text-xs sm:text-sm text-charcoal-light mt-2 leading-relaxed">
+                                    <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">歯の美肌ケア</span>
+                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">セルフホワイトニング</h3>
+                                    <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
                                         ふかふかの専用リクライニングチェアで、リラックスしながら歯本来の白さへ。食品レベルの安全なジェルとLED照射で、しみない・痛くないストレスフリーなケアです。
                                     </p>
                                 </div>
-                                <div class="text-left md:text-right flex-shrink-0 bg-ivory-50 p-3.5 rounded-2xl border border-ivory-200">
-                                    <span class="text-[11px] text-charcoal-muted block">定価 ¥6,000 / LINE会員 ¥3,980</span>
-                                    <span class="text-xs text-champagne-dark font-bold block mt-1">初回限定トライアル</span>
-                                    <span class="font-serif text-2xl font-bold text-charcoal">¥980</span>
+                                <div class="text-left md:text-right flex-shrink-0 bg-obsidian-950 p-3.5 rounded-2xl border gold-border-strong">
+                                    <span class="text-[11px] text-pearl-dim block">定価 ¥6,000 / LINE会員 ¥3,980</span>
+                                    <span class="text-xs text-gold-light font-bold block mt-1">初回限定トライアル</span>
+                                    <span class="font-serif text-2xl font-bold gold-foil-text">¥980</span>
                                 </div>
                             </div>
                         </div>
@@ -482,56 +510,56 @@
                 </div>
 
                 <!-- 3. セルキュア4T++ -->
-                <div class="bg-white border border-ivory-300 rounded-3xl p-6 md:p-8 luxury-shadow" data-aos="fade-up">
+                <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-8 luxury-dark-shadow" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-                        <div class="w-full md:w-1/3 bg-ivory-50 rounded-2xl p-2 border border-ivory-200 overflow-hidden">
+                        <div class="w-full md:w-1/3 bg-obsidian-950 rounded-2xl p-2 border gold-border overflow-hidden">
                             <img src="./CELLCure.jpg" alt="セルキュア4T++ フェイシャル施術" class="h-52 w-full object-cover rounded-xl hover:scale-105 transition duration-500">
                         </div>
                         <div class="w-full md:w-2/3">
                             <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-3">
                                 <div>
-                                    <span class="bg-ivory-100 text-champagne-dark text-xs font-bold px-3 py-1 rounded-full border border-ivory-300">お顔集中特化</span>
-                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-charcoal mt-2.5">セルキュア4T++ フェイシャル</h3>
-                                    <p class="text-xs sm:text-sm text-charcoal-light mt-2 leading-relaxed">
+                                    <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">お顔集中特化</span>
+                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">セルキュア4T++ フェイシャル</h3>
+                                    <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
                                         芸能人やモデルも愛用する美顔器「セルキュア4T++」を用いたプロの手による集中ケア。特許波I.W波が深層表情筋・頭皮筋膜へ直接アプローチします。
                                     </p>
                                 </div>
-                                <div class="text-left md:text-right flex-shrink-0 bg-ivory-50 p-3.5 rounded-2xl border border-ivory-200">
-                                    <span class="text-[11px] text-charcoal-muted block line-through">定価 ¥12,000〜</span>
-                                    <span class="text-xs text-champagne-dark font-bold block mt-0.5">LINE会員 特別価格</span>
-                                    <span class="font-serif text-2xl font-bold text-charcoal">¥8,980<span class="text-xs font-sans font-normal text-charcoal-light">〜 / 回</span></span>
+                                <div class="text-left md:text-right flex-shrink-0 bg-obsidian-950 p-3.5 rounded-2xl border gold-border-strong">
+                                    <span class="text-[11px] text-pearl-dim block line-through">定価 ¥12,000〜</span>
+                                    <span class="text-xs text-gold-light font-bold block mt-0.5">LINE会員 特別価格</span>
+                                    <span class="font-serif text-2xl font-bold gold-foil-text">¥8,980<span class="text-xs font-sans font-normal text-pearl-muted">〜 / 回</span></span>
                                 </div>
                             </div>
-                            <ul class="text-xs text-charcoal-light grid grid-cols-2 gap-2 border-t border-ivory-200 pt-3">
-                                <li><i class="fa-solid fa-check text-champagne mr-1.5"></i> たるみ・むくみケア</li>
-                                <li><i class="fa-solid fa-check text-champagne mr-1.5"></i> フェイスラインの引き締め</li>
-                                <li><i class="fa-solid fa-check text-champagne mr-1.5"></i> ハリ・弾力アップ</li>
-                                <li><i class="fa-solid fa-check text-champagne mr-1.5"></i> 毛穴洗浄・くすみ改善</li>
+                            <ul class="text-xs text-pearl-muted grid grid-cols-2 gap-2 border-t border-white/10 pt-3">
+                                <li><i class="fa-solid fa-check text-gold-light mr-1.5"></i> たるみ・むくみケア</li>
+                                <li><i class="fa-solid fa-check text-gold-light mr-1.5"></i> フェイスラインの引き締め</li>
+                                <li><i class="fa-solid fa-check text-gold-light mr-1.5"></i> ハリ・弾力アップ</li>
+                                <li><i class="fa-solid fa-check text-gold-light mr-1.5"></i> 毛穴洗浄・くすみ改善</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- 4. INFINITY CHAIN -->
-                <div class="bg-white border border-ivory-300 rounded-3xl p-6 md:p-8 luxury-shadow" data-aos="fade-up">
+                <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-8 luxury-dark-shadow" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-                        <div class="w-full md:w-1/3 bg-ivory-50 rounded-2xl p-2 border border-ivory-200 overflow-hidden">
+                        <div class="w-full md:w-1/3 bg-obsidian-950 rounded-2xl p-2 border gold-border overflow-hidden">
                             <img src="./Infinity.jpg" alt="INFINITY CHAIN シームレスジュエリー" class="h-52 w-full object-cover rounded-xl hover:scale-105 transition duration-500">
                         </div>
                         <div class="w-full md:w-2/3">
                             <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                                 <div>
-                                    <span class="bg-ivory-100 text-champagne-dark text-xs font-bold px-3 py-1 rounded-full border border-ivory-300">パーマネントジュエリー</span>
-                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-charcoal mt-2.5">INFINITY CHAIN（シームレスジュエリー）</h3>
-                                    <p class="text-xs sm:text-sm text-charcoal-light mt-2 leading-relaxed">
+                                    <span class="bg-obsidian-800 text-gold-light text-xs font-bold px-3 py-1 rounded-full border gold-border">パーマネントジュエリー</span>
+                                    <h3 class="font-serif text-xl md:text-2xl font-bold text-pearl mt-2.5">INFINITY CHAIN（シームレスジュエリー）</h3>
+                                    <p class="text-xs sm:text-sm text-pearl-muted mt-2 leading-relaxed">
                                         留め具のない特別な溶接アクセサリー。肌身離さずずっとつながる上品な輝きは、ご自身へのご褒美や大切な方とのペアジュエリーにも人気です。
                                     </p>
-                                    <p class="text-[11px] text-charcoal-muted mt-2">定価：ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
+                                    <p class="text-[11px] text-pearl-dim mt-2">定価：ブレスレット ¥6,000 / アンクレット ¥8,000 / ネックレス ¥10,000</p>
                                 </div>
-                                <div class="text-left md:text-right flex-shrink-0 bg-ivory-50 p-3.5 rounded-2xl border border-ivory-200">
-                                    <span class="text-[11px] text-charcoal-muted block line-through">定価 ¥6,000〜</span>
-                                    <span class="text-xs text-champagne-dark font-bold block mt-0.5">LINE会員 ¥2,000 OFF</span>
-                                    <span class="font-serif text-2xl font-bold text-charcoal">¥4,000<span class="text-xs font-sans font-normal text-charcoal-light">〜</span></span>
+                                <div class="text-left md:text-right flex-shrink-0 bg-obsidian-950 p-3.5 rounded-2xl border gold-border-strong">
+                                    <span class="text-[11px] text-pearl-dim block line-through">定価 ¥6,000〜</span>
+                                    <span class="text-xs text-gold-light font-bold block mt-0.5">LINE会員 ¥2,000 OFF</span>
+                                    <span class="font-serif text-2xl font-bold gold-foil-text">¥4,000<span class="text-xs font-sans font-normal text-pearl-muted">〜</span></span>
                                 </div>
                             </div>
                         </div>
@@ -541,20 +569,78 @@
         </div>
     </section>
 
-    <!-- 公式WEBチラシ -->
-    <section id="flyer" class="py-16 md:py-20 bg-white border-t border-ivory-300/70">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
-            <div class="text-center mb-8">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">Official Flyer</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">LUVIA 公式メニューチラシ</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-charcoal-light mt-4">店頭配布中の公式チラシです。各部位の都度払い料金やコース詳細をご確認いただけます。</p>
+    <!-- スタッフ紹介（認証現役プロライバー紹介） -->
+    <section id="staff" class="py-16 md:py-22 bg-obsidian-900 border-b gold-border">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Certified Pro Livers</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">認証現役ライバー・専任スタッフ紹介</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">人前に立つプロとして美を追求する認証現役ライバーが、丁寧なカウンセリングと確かな技術で施術いたします。</p>
             </div>
 
-            <div class="rounded-3xl overflow-hidden border gold-border-subtle luxury-shadow bg-ivory-50 p-3 sm:p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-obsidian-950 border gold-border-strong rounded-3xl p-6 sm:p-8 text-center luxury-dark-shadow flex flex-col justify-between relative overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
+                    <div>
+                        <div class="inline-block px-3 py-0.5 rounded-full bg-obsidian-800 border gold-border text-[11px] text-gold-light mb-4">
+                            <i class="fa-solid fa-certificate mr-1"></i>認証現役プロライバー
+                        </div>
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-gold-light mb-4 shadow-lg bg-obsidian-800">
+                            <img src="./1791266765267.jpg?v=final" alt="NATSUMI" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-en text-2xl font-bold gold-foil-text tracking-widest">NATSUMI</h3>
+                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Liver / Esthetician</p>
+                        <p class="text-xs sm:text-sm text-pearl-muted mt-3 leading-relaxed">
+                            丁寧なカウンセリングでお肌の悩みに寄り添い、確かな技術を提供いたします。ライブ配信やSNSでもサロンの最新情報や美容知識を発信中。
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="https://lit.link/_naaa" target="_blank" rel="noopener noreferrer" class="btn-gold-outline w-full font-bold text-xs sm:text-sm py-3 px-4 rounded-xl inline-flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> NATSUMI 公式SNS・配信リンク
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-obsidian-950 border gold-border-strong rounded-3xl p-6 sm:p-8 text-center luxury-dark-shadow flex flex-col justify-between relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-[2px] gold-foil-bg"></div>
+                    <div>
+                        <div class="inline-block px-3 py-0.5 rounded-full bg-obsidian-800 border gold-border text-[11px] text-gold-light mb-4">
+                            <i class="fa-solid fa-certificate mr-1"></i>認証現役プロライバー
+                        </div>
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-gold-light mb-4 shadow-lg bg-obsidian-800">
+                            <img src="./1791266765312.jpg?v=final" alt="YUME" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-en text-2xl font-bold gold-foil-text tracking-widest">YUME</h3>
+                        <p class="text-xs text-pearl-dim font-medium mt-1">Certified Liver / Beauty Specialist</p>
+                        <p class="text-xs sm:text-sm text-pearl-muted mt-3 leading-relaxed">
+                            リラックスしていただける上質な空間と丁寧な施術をお届けします。初めての美容サロン通いも安心してお任せください。
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="https://lit.link/7ebe1cf1-00a7-47bb-8fb1-c6ad041c2535" target="_blank" rel="noopener noreferrer" class="btn-gold-outline w-full font-bold text-xs sm:text-sm py-3 px-4 rounded-xl inline-flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> YUME 公式SNS・配信リンク
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公式WEBチラシ -->
+    <section id="flyer" class="py-16 md:py-22 bg-obsidian-950 border-b gold-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
+            <div class="text-center mb-8">
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Official Flyer</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">LUVIA 公式メニューチラシ</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
+                <p class="text-xs md:text-sm text-pearl-muted mt-4">店頭配布中の公式チラシです。各部位の都度払い料金やコース詳細をご確認いただけます。</p>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden border gold-border-strong luxury-dark-shadow bg-obsidian-900 p-3 sm:p-4">
                 <img src="./11020.jpg" alt="LUVIA 公式チラシ・メニュー表" class="w-full h-auto object-contain rounded-2xl mx-auto">
                 <div class="pt-4 pb-1 px-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-                    <span class="text-xs text-charcoal-muted">※画像をタップまたはピンチアウトで細部まで拡大できます。</span>
+                    <span class="text-xs text-pearl-dim">※画像をタップまたはピンチアウトで細部まで拡大できます。</span>
                     <a href="./11020.jpg" target="_blank" class="btn-gold-outline text-xs font-bold py-2 px-4 rounded-full inline-flex items-center gap-1.5">
                         <i class="fa-solid fa-magnifying-glass-plus"></i> チラシを高画質で拡大表示
                     </a>
@@ -563,19 +649,19 @@
         </div>
     </section>
 
-    <!-- YouTube サロン動画 & サロンギャラリー（すっきり2セクション統合・清潔感重視） -->
-    <section id="movie" class="py-16 md:py-20 bg-ivory-100 border-t border-ivory-300/70">
+    <!-- YouTube サロン動画 & サロンギャラリー -->
+    <section id="movie" class="py-16 md:py-22 bg-obsidian-900 border-b gold-border">
         <div class="max-w-5xl mx-auto px-4 sm:px-6" data-aos="fade-up">
             <div class="text-center mb-12">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">Salon Atmosphere</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">サロンの雰囲気・施術風景</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Salon Atmosphere</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">サロンの雰囲気・施術風景</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <!-- ショート動画 -->
                 <div class="lg:col-span-5 flex flex-col items-center">
-                    <div class="w-full max-w-[270px] rounded-3xl overflow-hidden border-2 border-white shadow-xl bg-charcoal" style="aspect-ratio: 9/16;">
+                    <div class="w-full max-w-[270px] rounded-3xl overflow-hidden border-2 gold-border-strong gold-glow-subtle bg-black" style="aspect-ratio: 9/16;">
                         <iframe class="w-full h-full"
                                 src="https://www.youtube-nocookie.com/embed/ospVmfaDJf0"
                                 title="LUVIA Official YouTube Shorts"
@@ -584,24 +670,24 @@
                                 allowfullscreen>
                         </iframe>
                     </div>
-                    <a href="https://youtube.com/shorts/ospVmfaDJf0?si=VQVtbByv38u5oqmt" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-charcoal-light hover:text-champagne-dark inline-flex items-center gap-1.5 font-medium">
-                        <i class="fa-brands fa-youtube text-red-600 text-base"></i> YouTubeアプリで大きく見る
+                    <a href="https://youtube.com/shorts/ospVmfaDJf0?si=VQVtbByv38u5oqmt" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-pearl-muted hover:text-gold-light inline-flex items-center gap-1.5 font-medium">
+                        <i class="fa-brands fa-youtube text-red-500 text-base"></i> YouTubeアプリで大きく見る
                     </a>
                 </div>
 
                 <!-- 店内写真3枚 -->
                 <div class="lg:col-span-7 space-y-4">
-                    <p class="text-xs sm:text-sm text-charcoal-light leading-relaxed">
+                    <p class="text-xs sm:text-sm text-pearl-muted leading-relaxed">
                         他のお客様とすれ違うことのない完全予約制のプライベート空間です。清潔感のある白を基調とした施術ルームで、ゆったりとお過ごしいただけます。
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="rounded-2xl overflow-hidden border border-white shadow-md h-48">
+                        <div class="rounded-2xl overflow-hidden border gold-border shadow-md h-48">
                             <img src="./welcome.jpg" alt="ウェルカムスペース" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <div class="rounded-2xl overflow-hidden border border-white shadow-md h-48">
+                        <div class="rounded-2xl overflow-hidden border gold-border shadow-md h-48">
                             <img src="./Datsumou.jpg" alt="清潔な施術ベッドと脱毛機" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <div class="rounded-2xl overflow-hidden border border-white shadow-md h-52 sm:col-span-2">
+                        <div class="rounded-2xl overflow-hidden border gold-border shadow-md h-52 sm:col-span-2">
                             <img src="./Bed.jpg" alt="落ち着いたプライベート空間" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                         </div>
                     </div>
@@ -610,107 +696,52 @@
         </div>
     </section>
 
-    <!-- スタッフ紹介（11235.jpg 現役プロライバー所属ビジュアルをメイン配置） -->
-    <section id="staff" class="py-16 md:py-20 bg-white border-t border-ivory-300/70">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-10" data-aos="fade-up">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">Staff Members</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">専任スタッフ紹介</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
-                <p class="text-xs md:text-sm text-charcoal-light mt-4">丁寧なカウンセリングと確かな技術で、お一人おひとりの美しさをサポートいたします。</p>
-            </div>
-
-            <!-- スタッフ＆サロン特徴ビジュアル（11235.jpg） -->
-            <div class="max-w-2xl mx-auto mb-10 rounded-3xl overflow-hidden border gold-border-subtle luxury-shadow p-2 bg-ivory-50" data-aos="fade-up">
-                <img src="./11235.jpg" alt="LUVIA 現役プロライバー所属・スタッフ紹介" class="w-full h-auto object-cover rounded-2xl">
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <div class="bg-ivory-50 border gold-border-subtle rounded-3xl p-6 sm:p-8 text-center luxury-shadow flex flex-col justify-between" data-aos="fade-up">
-                    <div>
-                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-champagne mb-4 shadow-md bg-white">
-                            <img src="./1791266765267.jpg?v=final" alt="NATSUMI" class="w-full h-full object-cover">
-                        </div>
-                        <h3 class="font-en text-2xl font-semibold text-charcoal tracking-widest">NATSUMI</h3>
-                        <p class="text-xs text-champagne-dark font-medium mt-1">Staff / Pro Liver</p>
-                        <p class="text-xs sm:text-sm text-charcoal-light mt-3 leading-relaxed">
-                            丁寧なカウンセリングでお肌の悩みに寄り添い、確かな技術を提供いたします。配信やSNSでもサロンの最新情報を発信中。
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-ivory-200">
-                        <a href="https://lit.link/_naaa" target="_blank" rel="noopener noreferrer" class="btn-gold-outline w-full font-bold text-xs sm:text-sm py-3 px-4 rounded-xl inline-flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> NATSUMI 公式SNS・リンク
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-ivory-50 border gold-border-subtle rounded-3xl p-6 sm:p-8 text-center luxury-shadow flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
-                    <div>
-                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-champagne mb-4 shadow-md bg-white">
-                            <img src="./1791266765312.jpg?v=final" alt="YUME" class="w-full h-full object-cover">
-                        </div>
-                        <h3 class="font-en text-2xl font-semibold text-charcoal tracking-widest">YUME</h3>
-                        <p class="text-xs text-champagne-dark font-medium mt-1">Staff / Beauty Specialist</p>
-                        <p class="text-xs sm:text-sm text-charcoal-light mt-3 leading-relaxed">
-                            リラックスしていただける上質な空間と丁寧な施術をお届けします。初めての美容サロン通いも安心してお任せください。
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-ivory-200">
-                        <a href="https://lit.link/7ebe1cf1-00a7-47bb-8fb1-c6ad041c2535" target="_blank" rel="noopener noreferrer" class="btn-gold-outline w-full font-bold text-xs sm:text-sm py-3 px-4 rounded-xl inline-flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> YUME 公式SNS・リンク
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 店舗情報 -->
-    <section id="access" class="py-16 md:py-20 bg-ivory-100 border-t border-ivory-300/70">
+    <section id="access" class="py-16 md:py-22 bg-obsidian-950">
         <div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
             <div class="text-center mb-10">
-                <span class="font-en text-sm tracking-[0.25em] text-champagne-dark uppercase block mb-1">Salon Info</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-charcoal">サロン概要・店舗情報</h2>
-                <div class="w-12 h-[1px] bg-champagne mx-auto mt-4"></div>
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Salon Info</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">サロン概要・店舗情報</h2>
+                <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
             </div>
 
-            <div class="bg-white border border-ivory-300 rounded-3xl p-6 md:p-10 space-y-4 text-xs sm:text-sm luxury-shadow">
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-ivory-200 pb-3.5">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">サロン名</span>
-                    <span class="text-charcoal font-medium flex-1">Total Beauty Salon LUVIA（ルヴィア）</span>
+            <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-10 space-y-4 text-xs sm:text-sm luxury-dark-shadow">
+                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">サロン名</span>
+                    <span class="text-pearl font-medium flex-1">Total Beauty Salon LUVIA（ルヴィア）</span>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-ivory-200 pb-3.5">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">所在地</span>
-                    <span class="text-charcoal font-medium flex-1">〒492-8082 愛知県稲沢市下津下町西三丁目103番地1 フレグランス下津 1F</span>
+                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">所在地</span>
+                    <span class="text-pearl font-medium flex-1">〒492-8082 愛知県稲沢市下津下町西三丁目103番地1 フレグランス下津 1F</span>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-ivory-200 pb-3.5">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">駐車場</span>
-                    <span class="text-charcoal font-medium flex-1">駐車場あり（お車でお越しいただけます）</span>
+                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">駐車場</span>
+                    <span class="text-pearl font-medium flex-1">駐車場あり（お車でお越しいただけます）</span>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-ivory-200 pb-3.5">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">営業時間</span>
-                    <span class="text-charcoal font-medium flex-1">9:00 〜 17:00（完全予約制）</span>
+                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">営業時間</span>
+                    <span class="text-pearl font-medium flex-1">9:00 〜 17:00（完全予約制）</span>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-ivory-200 pb-3.5">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">定休日</span>
-                    <span class="text-charcoal font-medium flex-1">土日祝</span>
+                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">定休日</span>
+                    <span class="text-pearl font-medium flex-1">土日祝</span>
                 </div>
                 <div class="flex flex-col sm:flex-row sm:justify-between">
-                    <span class="text-champagne-dark font-bold w-32 mb-1 sm:mb-0">お支払い方法</span>
-                    <span class="text-charcoal font-medium flex-1">完全都度払い（高額ローン・回数券勧誘なし）</span>
+                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">お支払い方法</span>
+                    <span class="text-pearl font-medium flex-1">完全都度払い（高額ローン・回数券勧誘なし）</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- フッター -->
-    <footer class="pt-10 pb-28 bg-charcoal text-ivory-200 text-center text-xs">
-        <p class="mb-2 font-en tracking-[0.25em] text-champagne-light font-semibold text-base">TOTAL BEAUTY SALON LUVIA</p>
-        <p class="text-ivory-300/70">&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
+    <footer class="pt-10 pb-28 bg-obsidian-950 border-t gold-border text-center text-xs">
+        <p class="mb-2 font-en tracking-[0.28em] gold-foil-text font-bold text-base">TOTAL BEAUTY SALON LUVIA</p>
+        <p class="text-pearl-dim">&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
     </footer>
 
     <!-- スマホ・PC追従型 予約バー -->
-    <div class="fixed bottom-0 left-0 w-full p-3 bg-ivory-50/95 backdrop-blur-md border-t border-ivory-300 z-50 shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+    <div class="fixed bottom-0 left-0 w-full p-3 bg-obsidian-950/95 backdrop-blur-md border-t gold-border z-50">
         <div class="max-w-md mx-auto">
             <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="w-full btn-line-luxury text-white font-bold text-xs sm:text-sm py-3.5 px-6 rounded-full flex items-center justify-center gap-2">
                 <i class="fa-brands fa-line text-xl"></i>
