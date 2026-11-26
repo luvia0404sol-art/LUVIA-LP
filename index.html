@@ -113,7 +113,7 @@
                 <a href="#campaign" class="hover:text-gold-light transition">初回特典</a>
                 <a href="#price" class="hover:text-gold-light transition">料金表</a>
                 <a href="#menu" class="hover:text-gold-light transition">施術内容</a>
-                <a href="#staff" class="hidden sm:inline hover:text-gold-light transition">認証ライバー</a>
+                <a href="#access" class="hidden sm:inline hover:text-gold-light transition">アクセス</a>
                 <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" class="gold-foil-bg text-obsidian-950 font-bold text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:opacity-90 transition tracking-wider shadow-md flex-shrink-0">
                     LINE予約
                 </a>
@@ -572,7 +572,7 @@
                 <p class="text-xs md:text-sm text-pearl-muted mt-4">人前に立つプロとして美を追求する認証現役プロライバーが、丁寧なカウンセリングと確かな技術で施術いたします。</p>
             </div>
 
-            <!-- 現役プロライバー所属ビジュアル（11235.jpg）をスタッフセクションに配置 -->
+            <!-- 現役プロライバー所属ビジュアル（11235.jpg） -->
             <div class="max-w-2xl mx-auto mb-10 p-2 bg-gradient-to-br from-gold-light/40 to-obsidian-800 rounded-2xl border gold-border-strong luxury-dark-shadow" data-aos="fade-up">
                 <img src="./11235.jpg" alt="LUVIA 認証現役プロライバー所属" class="w-full h-auto object-cover rounded-xl">
             </div>
@@ -694,39 +694,102 @@
         </div>
     </section>
 
-    <!-- 店舗情報 -->
+    <!-- 店舗情報 & Googleマップ & 公式SNS -->
     <section id="access" class="py-16 md:py-22 bg-obsidian-950">
         <div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
             <div class="text-center mb-10">
-                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Salon Info</span>
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">サロン概要・店舗情報</h2>
+                <span class="font-en text-sm tracking-[0.28em] text-gold-light uppercase block mb-1">Access & Official SNS</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-semibold text-pearl">サロン概要・アクセス・公式SNS</h2>
                 <div class="w-14 h-[1px] gold-foil-bg mx-auto mt-4"></div>
             </div>
 
-            <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-10 space-y-4 text-xs sm:text-sm luxury-dark-shadow">
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">サロン名</span>
-                    <span class="text-pearl font-medium flex-1">Total Beauty Salon LUVIA（ルヴィア）</span>
+            <div class="bg-obsidian-900 border gold-border rounded-3xl p-6 md:p-10 space-y-6 text-xs sm:text-sm luxury-dark-shadow">
+                <!-- 店舗基本データ -->
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">サロン名</span>
+                        <span class="text-pearl font-medium flex-1">Total Beauty Salon LUVIA（ルヴィア）</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">所在地</span>
+                        <span class="text-pearl font-medium flex-1">〒492-8082 愛知県稲沢市下津下町西三丁目103番地1 フレグランス下津 1F</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">駐車場</span>
+                        <span class="text-pearl font-medium flex-1">駐車場あり（お車でお越しいただけます）</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">営業時間</span>
+                        <span class="text-pearl font-medium flex-1">9:00 〜 17:00（完全予約制）</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">定休日</span>
+                        <span class="text-pearl font-medium flex-1">土日祝</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
+                        <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">お支払い方法</span>
+                        <span class="text-pearl font-medium flex-1">完全都度払い（高額ローン・回数券勧誘なし）</span>
+                    </div>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">所在地</span>
-                    <span class="text-pearl font-medium flex-1">〒492-8082 愛知県稲沢市下津下町西三丁目103番地1 フレグランス下津 1F</span>
+
+                <!-- Googleマップ埋め込み -->
+                <div class="pt-2">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-gold-light font-bold flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot"></i> アクセスマップ（Google Map）
+                        </span>
+                        <a href="https://maps.google.com/?q=愛知県稲沢市下津下町西三丁目103番地1" target="_blank" rel="noopener noreferrer" class="text-xs text-gold-pale hover:text-gold-light underline inline-flex items-center gap-1">
+                            Googleマップアプリで開く <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border gold-border-strong shadow-lg w-full h-64 sm:h-80 bg-obsidian-800">
+                        <iframe
+                            src="https://maps.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%A8%B2%E6%B2%A2%E5%B8%82%E4%B8%8B%E6%B4%A5%E4%B8%8B%E7%94%BA%E8%A5%BF%E4%B8%89%E4%B8%81%E7%9B%AE103%E7%95%AA%E5%9C%B01&t=m&z=16&output=embed&iwloc=near"
+                            class="w-full h-full border-0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Total Beauty Salon LUVIA Googleマップ">
+                        </iframe>
+                    </div>
                 </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">駐車場</span>
-                    <span class="text-pearl font-medium flex-1">駐車場あり（お車でお越しいただけます）</span>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">営業時間</span>
-                    <span class="text-pearl font-medium flex-1">9:00 〜 17:00（完全予約制）</span>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between border-b border-white/10 pb-3.5">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">定休日</span>
-                    <span class="text-pearl font-medium flex-1">土日祝</span>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:justify-between">
-                    <span class="text-gold-light font-bold w-32 mb-1 sm:mb-0">お支払い方法</span>
-                    <span class="text-pearl font-medium flex-1">完全都度払い（高額ローン・回数券勧誘なし）</span>
+
+                <!-- 各種公式SNSリンク -->
+                <div class="pt-4 border-t border-white/10">
+                    <p class="text-center font-serif text-sm sm:text-base font-semibold text-gold-pale mb-4">
+                        LUVIA 公式SNS・最新情報はこちら
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/luvia__44" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-obsidian-950 border gold-border hover:border-gold-light transition group">
+                            <i class="fa-brands fa-instagram text-xl text-pink-400 group-hover:scale-110 transition"></i>
+                            <div class="text-left">
+                                <span class="block text-xs font-bold text-pearl">Instagram</span>
+                                <span class="block text-[10px] text-pearl-dim">@luvia__44</span>
+                            </div>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@luvia__44" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-obsidian-950 border gold-border hover:border-gold-light transition group">
+                            <i class="fa-brands fa-tiktok text-xl text-cyan-300 group-hover:scale-110 transition"></i>
+                            <div class="text-left">
+                                <span class="block text-xs font-bold text-pearl">TikTok</span>
+                                <span class="block text-[10px] text-pearl-dim">@luvia__44</span>
+                            </div>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/shorts/ospVmfaDJf0?si=VQVtbByv38u5oqmt" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-obsidian-950 border gold-border hover:border-gold-light transition group">
+                            <i class="fa-brands fa-youtube text-xl text-red-500 group-hover:scale-110 transition"></i>
+                            <div class="text-left">
+                                <span class="block text-xs font-bold text-pearl">YouTube</span>
+                                <span class="block text-[10px] text-pearl-dim">施術・サロン動画</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -734,7 +797,28 @@
 
     <!-- フッター -->
     <footer class="pt-10 pb-28 bg-obsidian-950 border-t gold-border text-center text-xs">
-        <p class="mb-2 font-en tracking-[0.28em] gold-foil-text font-bold text-base">TOTAL BEAUTY SALON LUVIA</p>
+        <p class="mb-4 font-en tracking-[0.28em] gold-foil-text font-bold text-base">TOTAL BEAUTY SALON LUVIA</p>
+        
+        <!-- フッターSNSアイコン -->
+        <div class="flex items-center justify-center gap-4 mb-5">
+            <a href="https://www.instagram.com/luvia__44" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+               class="w-10 h-10 rounded-full bg-obsidian-900 border gold-border flex items-center justify-center text-gold-light hover:bg-gold-light hover:text-obsidian-950 transition">
+                <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a href="https://www.tiktok.com/@luvia__44" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
+               class="w-10 h-10 rounded-full bg-obsidian-900 border gold-border flex items-center justify-center text-gold-light hover:bg-gold-light hover:text-obsidian-950 transition">
+                <i class="fa-brands fa-tiktok text-base"></i>
+            </a>
+            <a href="https://youtube.com/shorts/ospVmfaDJf0?si=VQVtbByv38u5oqmt" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+               class="w-10 h-10 rounded-full bg-obsidian-900 border gold-border flex items-center justify-center text-gold-light hover:bg-gold-light hover:text-obsidian-950 transition">
+                <i class="fa-brands fa-youtube text-lg"></i>
+            </a>
+            <a href="https://lin.ee/tum8tUo" target="_blank" rel="noopener noreferrer" aria-label="LINE"
+               class="w-10 h-10 rounded-full bg-obsidian-900 border gold-border flex items-center justify-center text-gold-light hover:bg-gold-light hover:text-obsidian-950 transition">
+                <i class="fa-brands fa-line text-lg"></i>
+            </a>
+        </div>
+
         <p class="text-pearl-dim">&copy; 2026 Total Beauty Salon LUVIA. All Rights Reserved.</p>
     </footer>
 
